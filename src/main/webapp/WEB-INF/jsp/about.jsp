@@ -11,26 +11,18 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/about-1.png" rel="icon">
+
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <jsp:include page="../includes/header_css_links.jsp"/>
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/title_logo.png" type="text/x-icon">
+
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -52,7 +44,7 @@
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/about_us.png);">
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/about_us.png);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
@@ -76,8 +68,8 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Airreserve</span></h1>
-                        <p class="mb-4">This is the demo system of Online Flight Booking methodology developed, designed and maintained by Tanmoy Das.</p>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Ethiopian Air Line</span></h1>
+                        <p class="mb-4">Star Alliance Member  ✈ 🛩🛩🛩 Icon for Africa </p>
                         <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
@@ -150,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Designer</small>
                             </div>
                         </div>
@@ -158,7 +150,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../../img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -166,7 +158,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Developer</small>
                             </div>
                         </div>
@@ -174,7 +166,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../../img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -182,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Back End Management</small>
                             </div>
                         </div>
@@ -198,7 +190,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Technical Support</small>
                             </div>
                         </div>
@@ -224,19 +216,7 @@
     </div>
 </div>
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <jsp:include page="../includes/footer_js_links.jsp"/>
 
 </body>
 

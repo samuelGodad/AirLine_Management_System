@@ -1,7 +1,6 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Airline Reservation System</title>
@@ -10,44 +9,38 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+    <jsp:include page="../includes/header_css_links.jsp"/>
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" href="img/title_logo.png" type="text/x-icon">
+
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
+<div class="container-xxl bg-white p-0">
+    <!-- Spinner Start -->
+    <!--div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+    <span class="sr-only">Loading...</span>
+    </div>
+    </div>
+    -->
+    <!-- Spinner End -->
+
+    <!-- Header Start -->
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <!--div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        -->
-        <!-- Spinner End -->
-
-        <!-- Header Start -->
-        <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -58,7 +51,8 @@
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="${pageContext.request.contextPath}/" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <a href="${pageContext.request.contextPath}/"
+                       class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                         <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
                     </a>
                 </div>
@@ -67,11 +61,12 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">dtanmoy169@gmail.com</p>
+                                <p class="mb-0">godadsamuel@gamil.com
+                                <p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+91 82405 70310</p>
+                                <p class="mb-0">+251098011765</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -88,23 +83,26 @@
                         <a href="${pageContext.request.contextPath}/" class="navbar-brand d-block d-lg-none">
                             <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
                         </a>
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">   
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="admin_login_pass" class="nav-item nav-link">Home</a>
                                 <a href="addflights" class="nav-item nav-link active"><small>Add Flights</small></a>
-                                <a href="availability_from_admin" class="nav-item nav-link"><small>Search Flights</small></a>
+                                <a href="availability_from_admin" class="nav-item nav-link"><small>Search
+                                    Flights</small></a>
                                 <a href="coupon_add" class="nav-item nav-link"><small>Add Coupon</small></a>
                                 <a href="coupon_search" class="nav-item nav-link"><small>Search Coupon</small></a>
                                 <a href="coupon_delete" class="nav-item nav-link"><small>Delete Coupon</small></a>
                             </div>
-                            <a href="${pageContext.request.contextPath}/" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block"><small>LogOut As</small><b>
-                                    <%  String A_name=(String)session.getAttribute("admin_name");  
-                                        out.print(A_name);  
-                                    %></b>
-                            <i class="fa fa-arrow-right ms-3"></i></a>
+                            <a href="${pageContext.request.contextPath}/"
+                               class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block"><small>LogOut As</small><b>
+                                <% String A_name = (String) session.getAttribute("admin_name");
+                                    out.print(A_name);
+                                %></b>
+                                <i class="fa fa-arrow-right ms-3"></i></a>
                         </div>
                     </nav>
                 </div>
@@ -114,19 +112,7 @@
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/addpln.png);">
-            <div class="container-fluid page-header-inner py-5">
-                <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Add Flights</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="admin_login_pass">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Add Flights</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <jsp:include page="../includes/admin_page_header.jsp">
         <!-- Page Header End -->
 
 
@@ -135,241 +121,294 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">
-                        <%  String flight_id=(String)session.getAttribute("flight_id");  
-                                        out.print(flight_id);  
-                                    %> , Details Added Successfully</h6>
+                        <% String flight_id = (String) session.getAttribute("flight_id");
+                            out.print(flight_id);
+                        %> , Details Added Successfully</h6>
                     <h1 class="mb-5">Add A <span class="text-primary text-uppercase">New Flight</span></h1>
                 </div>
                 <div class="row g-5">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="add_flight_validation.jsp">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Flight ID" name="flight_id">
-                                            <label>Enter Flight ID</label>
-                                        </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <form method="post" action="add_flight_validation">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Enter Flight ID"
+                                               name="flight_id">
+                                        <label>Enter Flight ID</label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Flight Number" name="flight_no">
-                                            <label>Enter Flight Number</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <select class="form-select" name="flight_name" id="flight_name">
-                                                <option selected>Enter Flight Name</option>
-                                                <option value="AirAsia India">AirAsia India</option>
-                                                <option value="Air India">Air India</option>
-                                                <option value="Air India Express">Air India Express</option>
-                                                <option value="Go First">Go First</option>
-                                                <option value="IndiGo">IndiGo</option>
-                                                <option value="SpiceJet">SpiceJet</option>
-                                                <option value="Vistara">Vistara</option>
-                                                <option value="Alliance Air">Alliance Air</option>
-                                                <option value="FlyBig">FlyBig</option>
-                                                <option value="Star Air">Star Air</option>
-                                                <option value="TruJet">TruJet</option>
-                                                <option value="TajAir">TajAir</option>
-                                                <option value="SpiceXpress">SpiceXpress</option>
-                                                <option value="Quikjet Airlines">Quikjet Airlines</option>
-                                                <option value="Blue Dart Aviation">Blue Dart Aviation</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-12"></div>
-                                    
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <select class="form-select" name="from_city" id="from_city">
-                                                <option selected>Departure City Name</option>
-                                                <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
-                                                <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
-                                                <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
-                                                <option value="Bengaluru International Airport - BLR">Bengaluru International Airport - BLR</option>
-                                                <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
-                                                <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
-                                                <option value="Birsa Munda International Airport - IXR">Birsa Munda International Airport - IXR</option>
-                                                <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
-                                                <option value="Chennai International Airport - MAA">Chennai International Airport - MAA</option>
-                                                <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati Shivaji International Airport - BOM</option>
-                                                <option value="Cochin International Airport - COK">Cochin International Airport - COK</option>
-                                                <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
-                                                <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
-                                                <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
-                                                <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
-                                                <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
-                                                <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar Airport - IDR</option>
-                                                <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
-                                                <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
-                                                <option value="Hyderabad International Airport - HYD">Hyderabad International Airport - HYD</option>
-                                                <option value="Indira Gandhi International Airport - DEL">Indira Gandhi International Airport - DEL</option>
-                                                <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
-                                                <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
-                                                <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
-                                                <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
-                                                <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
-                                                <option value="Kota Airport - KTU">Kota Airport - KTU</option>
-                                                <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
-                                                <option value="Malda Airport - LDA">Malda Airport - LDA</option>
-                                                <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
-                                                <option value="Netaji Subhash Chandra Bose International Airport - CCU">Netaji Subhash Chandra Bose International Airport - CCU</option>
-                                                <option value="Patna Airport - PAT">Patna Airport - PAT</option>
-                                                <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
-                                                <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
-                                                <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
-                                                <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
-                                                <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
-                                                <option value="Simla Airport - SLV">Simla Airport - SLV</option>
-                                                <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
-                                                <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
-                                                <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
-                                                <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
-                                                <option value="Surat Airport - STV">Surat Airport - STV</option>
-                                                <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
-                                                <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
-                                                <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
-                                                <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <select class="form-select" name="to_city" id="to_city">
-                                                <option selected>Arrival City Name</option>
-                                                <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
-                                                <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
-                                                <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
-                                                <option value="Bengaluru International Airport - BLR">Bengaluru International Airport - BLR</option>
-                                                <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
-                                                <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
-                                                <option value="Birsa Munda International Airport - IXR">Birsa Munda International Airport - IXR</option>
-                                                <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
-                                                <option value="Chennai International Airport - MAA">Chennai International Airport - MAA</option>
-                                                <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati Shivaji International Airport - BOM</option>
-                                                <option value="Cochin International Airport - COK">Cochin International Airport - COK</option>
-                                                <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
-                                                <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
-                                                <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
-                                                <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
-                                                <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
-                                                <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar Airport - IDR</option>
-                                                <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
-                                                <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
-                                                <option value="Hyderabad International Airport - HYD">Hyderabad International Airport - HYD</option>
-                                                <option value="Indira Gandhi International Airport - DEL">Indira Gandhi International Airport - DEL</option>
-                                                <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
-                                                <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
-                                                <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
-                                                <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
-                                                <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
-                                                <option value="Kota Airport - KTU">Kota Airport - KTU</option>
-                                                <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
-                                                <option value="Malda Airport - LDA">Malda Airport - LDA</option>
-                                                <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
-                                                <option value="Netaji Subhash Chandra Bose International Airport - CCU">Netaji Subhash Chandra Bose International Airport - CCU</option>
-                                                <option value="Patna Airport - PAT">Patna Airport - PAT</option>
-                                                <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
-                                                <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
-                                                <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
-                                                <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
-                                                <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
-                                                <option value="Simla Airport - SLV">Simla Airport - SLV</option>
-                                                <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
-                                                <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
-                                                <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
-                                                <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
-                                                <option value="Surat Airport - STV">Surat Airport - STV</option>
-                                                <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
-                                                <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
-                                                <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
-                                                <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating date">
-                                            <input type="date" class="form-control" placeholder="Date Of Flight" name="date_of_flight">
-                                            <label for="checkin">Date Of Flight</label>
-                                        </div>
-                                    </div>
-                                                                       
-                                    <div class="col-12"></div>
-                                    
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Flight Departure Time HHMM" name="flight_arrival_time">
-                                            <label><small>Enter Flight Departure Time HHMM</small></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Flight Arrival Time HHMM" id="frt" name="flight_reach_time">
-                                            <label><small>Enter Flight Arrival Time HHMM</small></label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-12"></div>
-                                    
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter First Class Seat" name="first_class_seat">
-                                            <label><small>Enter First Class Seat</small></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter First Class Seat Price" name="first_class_price">
-                                            <label><small>Enter First Class Seat Price</small></label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-12"></div>
-                                    
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Business Class Seat" name="buss_class_seat">
-                                            <label><small>Enter Business Class Seat</small></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Business Class Seat Price" name="buss_class_price">
-                                            <label><small>Enter Business Class Seat Price</small></label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-12"></div>
-                                    
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Economy Class Seat" name="eco_class_seat">
-                                            <label><small>Enter Economy Class Seat</small></label>
-                                        </div>
-                                    </div>
-                                                                       
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" placeholder="Enter Economy Class Seat Price" name="eco_class_price">
-                                            <label><small>Enter Economy Class Seat Price</small></label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Add Flight To The DataBase</button>
-                                    </div>
-                                    <div class="col-12" style="margin-bottom: 12%;"><div class="form-floating"></div></div>
                                 </div>
-                            </form>
-                        </div>
-                    
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Enter Flight Number"
+                                               name="flight_no">
+                                        <label>Enter Flight Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="flight_name" id="flight_name">
+                                            <option selected>Enter Flight Name</option>
+                                            <option value="AirAsia India">AirAsia India</option>
+                                            <option value="Air India">Air India</option>
+                                            <option value="Air India Express">Air India Express</option>
+                                            <option value="Go First">Go First</option>
+                                            <option value="IndiGo">IndiGo</option>
+                                            <option value="SpiceJet">SpiceJet</option>
+                                            <option value="Vistara">Vistara</option>
+                                            <option value="Alliance Air">Alliance Air</option>
+                                            <option value="FlyBig">FlyBig</option>
+                                            <option value="Star Air">Star Air</option>
+                                            <option value="TruJet">TruJet</option>
+                                            <option value="TajAir">TajAir</option>
+                                            <option value="SpiceXpress">SpiceXpress</option>
+                                            <option value="Quikjet Airlines">Quikjet Airlines</option>
+                                            <option value="Blue Dart Aviation">Blue Dart Aviation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12"></div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="from_city" id="from_city">
+                                            <option selected>Departure City Name</option>
+                                            <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
+                                            <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
+                                            <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
+                                            <option value="Bengaluru International Airport - BLR">Bengaluru
+                                                International Airport - BLR
+                                            </option>
+                                            <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
+                                            <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
+                                            <option value="Birsa Munda International Airport - IXR">Birsa Munda
+                                                International Airport - IXR
+                                            </option>
+                                            <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
+                                            <option value="Chennai International Airport - MAA">Chennai International
+                                                Airport - MAA
+                                            </option>
+                                            <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati
+                                                Shivaji International Airport - BOM
+                                            </option>
+                                            <option value="Cochin International Airport - COK">Cochin International
+                                                Airport - COK
+                                            </option>
+                                            <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
+                                            <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
+                                            <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
+                                            <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
+                                            <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
+                                            <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar
+                                                Airport - IDR
+                                            </option>
+                                            <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
+                                            <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
+                                            <option value="Hyderabad International Airport - HYD">Hyderabad
+                                                International Airport - HYD
+                                            </option>
+                                            <option value="Indira Gandhi International Airport - DEL">Indira Gandhi
+                                                International Airport - DEL
+                                            </option>
+                                            <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
+                                            <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
+                                            <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
+                                            <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
+                                            <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
+                                            <option value="Kota Airport - KTU">Kota Airport - KTU</option>
+                                            <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
+                                            <option value="Malda Airport - LDA">Malda Airport - LDA</option>
+                                            <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
+                                            <option value="Netaji Subhash Chandra Bose International Airport - CCU">
+                                                Netaji Subhash Chandra Bose International Airport - CCU
+                                            </option>
+                                            <option value="Patna Airport - PAT">Patna Airport - PAT</option>
+                                            <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
+                                            <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
+                                            <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
+                                            <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
+                                            <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
+                                            <option value="Simla Airport - SLV">Simla Airport - SLV</option>
+                                            <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
+                                            <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
+                                            <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
+                                            <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
+                                            <option value="Surat Airport - STV">Surat Airport - STV</option>
+                                            <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
+                                            <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
+                                            <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
+                                            <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="to_city" id="to_city">
+                                            <option selected>Arrival City Name</option>
+                                            <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
+                                            <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
+                                            <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
+                                            <option value="Bengaluru International Airport - BLR">Bengaluru
+                                                International Airport - BLR
+                                            </option>
+                                            <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
+                                            <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
+                                            <option value="Birsa Munda International Airport - IXR">Birsa Munda
+                                                International Airport - IXR
+                                            </option>
+                                            <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
+                                            <option value="Chennai International Airport - MAA">Chennai International
+                                                Airport - MAA
+                                            </option>
+                                            <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati
+                                                Shivaji International Airport - BOM
+                                            </option>
+                                            <option value="Cochin International Airport - COK">Cochin International
+                                                Airport - COK
+                                            </option>
+                                            <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
+                                            <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
+                                            <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
+                                            <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
+                                            <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
+                                            <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar
+                                                Airport - IDR
+                                            </option>
+                                            <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
+                                            <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
+                                            <option value="Hyderabad International Airport - HYD">Hyderabad
+                                                International Airport - HYD
+                                            </option>
+                                            <option value="Indira Gandhi International Airport - DEL">Indira Gandhi
+                                                International Airport - DEL
+                                            </option>
+                                            <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
+                                            <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
+                                            <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
+                                            <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
+                                            <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
+                                            <option value="Kota Airport - KTU">Kota Airport - KTU</option>
+                                            <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
+                                            <option value="Malda Airport - LDA">Malda Airport - LDA</option>
+                                            <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
+                                            <option value="Netaji Subhash Chandra Bose International Airport - CCU">
+                                                Netaji Subhash Chandra Bose International Airport - CCU
+                                            </option>
+                                            <option value="Patna Airport - PAT">Patna Airport - PAT</option>
+                                            <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
+                                            <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
+                                            <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
+                                            <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
+                                            <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
+                                            <option value="Simla Airport - SLV">Simla Airport - SLV</option>
+                                            <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
+                                            <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
+                                            <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
+                                            <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
+                                            <option value="Surat Airport - STV">Surat Airport - STV</option>
+                                            <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
+                                            <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
+                                            <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
+                                            <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date">
+                                        <input type="date" class="form-control" placeholder="Date Of Flight"
+                                               name="date_of_flight">
+                                        <label for="checkin">Date Of Flight</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12"></div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control"
+                                               placeholder="Enter Flight Departure Time HHMM"
+                                               name="flight_arrival_time">
+                                        <label><small>Enter Flight Departure Time HHMM</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control"
+                                               placeholder="Enter Flight Arrival Time HHMM" id="frt"
+                                               name="flight_reach_time">
+                                        <label><small>Enter Flight Arrival Time HHMM</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12"></div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Enter First Class Seat"
+                                               name="first_class_seat">
+                                        <label><small>Enter First Class Seat</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control"
+                                               placeholder="Enter First Class Seat Price" name="first_class_price">
+                                        <label><small>Enter First Class Seat Price</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12"></div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Enter Business Class Seat"
+                                               name="buss_class_seat">
+                                        <label><small>Enter Business Class Seat</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control"
+                                               placeholder="Enter Business Class Seat Price" name="buss_class_price">
+                                        <label><small>Enter Business Class Seat Price</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12"></div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Enter Economy Class Seat"
+                                               name="eco_class_seat">
+                                        <label><small>Enter Economy Class Seat</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control"
+                                               placeholder="Enter Economy Class Seat Price" name="eco_class_price">
+                                        <label><small>Enter Economy Class Seat Price</small></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Add Flight To The
+                                        DataBase
+                                    </button>
+                                </div>
+                                <div class="col-12" style="margin-bottom: 12%;">
+                                    <div class="form-floating"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -377,7 +416,7 @@
 
 
         <!-- Newsletter Start -->
-            <jsp:include page="../includes/newsletter.jsp"/>
+        <jsp:include page="../includes/newsletter.jsp"/>
 
         <!-- Newsletter end -->
 
@@ -390,21 +429,10 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+</div>
+<!-- JavaScript Libraries -->
+<jsp:include page="../includes/footer_js_links.jsp"/>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
