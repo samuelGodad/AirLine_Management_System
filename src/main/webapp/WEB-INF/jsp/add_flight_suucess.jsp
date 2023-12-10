@@ -8,20 +8,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
 
-
-    <!-- Google Web Fonts -->
-
-
-    <!-- Icon Font Stylesheet -->
-
-
-    <!-- Libraries Stylesheet -->
     <jsp:include page="../includes/header_css_links.jsp"/>
-    <!-- Customized Bootstrap Stylesheet -->
 
-    <!-- Template Stylesheet -->
 
 </head>
 
@@ -416,7 +405,18 @@
 
 
         <!-- Newsletter Start -->
-        <jsp:include page="../includes/newsletter.jsp"/>
+        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s" style="margin: 23px; padding: 23px">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="text-center p-1">
+                        <div class="bg-white text-center p-5">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Newsletter end -->
 
@@ -424,8 +424,6 @@
         <!-- Footer Start -->
         <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
