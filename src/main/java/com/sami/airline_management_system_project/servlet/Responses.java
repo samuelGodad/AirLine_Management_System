@@ -17,11 +17,6 @@ import java.util.ArrayList;
 @WebServlet("/responses")
 public class Responses extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        
-    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -68,9 +63,6 @@ public class Responses extends HttpServlet {
     }
     
     
- @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
+
 
 }

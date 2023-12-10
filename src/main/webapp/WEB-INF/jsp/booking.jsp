@@ -9,22 +9,6 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-
-
-    <!-- Google Web Fonts -->
-
-
-    <!-- Icon Font Stylesheet -->
-
-
-    <!-- Libraries Stylesheet -->
-
-
-    <!-- Customized Bootstrap Stylesheet -->
-
-
-    <!-- Template Stylesheet -->
    <jsp:include page="../includes/header_css_links.jsp"/>
 
     <script>

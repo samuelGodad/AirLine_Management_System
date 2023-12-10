@@ -17,17 +17,14 @@ import java.util.ArrayList;
 
 @WebServlet("/search_coupon_all")
 public class search_coupon_all extends HttpServlet {
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        
-    }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+
+
         PrintWriter out = response.getWriter();
         Connection conn = null;
         String url = "jdbc:mysql://localhost:3306/";
@@ -68,9 +65,6 @@ public class search_coupon_all extends HttpServlet {
         }
 
     
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
+
 
 }
