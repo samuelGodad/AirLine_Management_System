@@ -41,7 +41,7 @@
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/contact_us.png);">
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/contact_us.png);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="contact_u">
+                            <form method="post" action="contact_user">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">

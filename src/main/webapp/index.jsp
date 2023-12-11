@@ -8,24 +8,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-    <!-- Favicon -->
-
-
-    <!-- Google Web Fonts -->
-
-
-    <!-- Icon Font Stylesheet -->
-
-
-    <!-- Libraries Stylesheet -->
-
-
-    <!-- Customized Bootstrap Stylesheet -->
-
-    <!-- Template Stylesheet -->
     <jsp:include page="WEB-INF/includes/header_css_links.jsp"/>
-<%--    <%@ include file = "../includes/navbar.jsp"%>--%>
     <script>   
     function setClipboard(value) {
     const tempInput = document.createElement("input");

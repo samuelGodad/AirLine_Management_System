@@ -74,9 +74,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="admin_login_validation">
+                            <form method="post" action="user_login">
                                 <div class="row g-3">
-                                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">AirReserve</span></h1>
+                                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Ethiopian Air Line</span></h1>
                                     <h6 class="text-start text-primary text-uppercase"> Admin Login Portal </h6>
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -91,7 +91,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Admin Login >></button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Admin Login</button>
+<%--                                        <a href="admin_login_validation" class="btn btn-outline-primary w-100 py-3 mt-3">Admin Signup</a>--%>
                                     </div>
                                 </div>
                             </form>

@@ -8,6 +8,8 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.properties
+.resources/properties
 *.iws
 *.iml
 *.ipr
@@ -17,9 +19,11 @@ target/
 .classpath
 .factorypath
 .project
+.properties
 .settings
 .springBeans
 .sts4-cache
+
 
 ### NetBeans ###
 /nbproject/private/

@@ -1,4 +1,4 @@
-package com.sami.airline_management_system_project.dispatcher;
+package com.sami.airline_management_system_project.routes;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -60,7 +60,7 @@ import java.io.IOException;
 		"/user_booking_failed",
 		"/user_login_failed",
 		"/user_login_pass",
-		"/user_login_validation"
+
 })
 public class PageDispatcherServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -222,7 +222,6 @@ public class PageDispatcherServlet extends HttpServlet {
 			case "/search_success_u":
 				showPage(request, response, "/WEB-INF/jsp/search_success_u.jsp");
 				break;
-
 			case "/search_success_a":
 				showPage(request, response, "/WEB-INF/jsp/search_success_a.jsp");
 				break;
@@ -244,10 +243,7 @@ public class PageDispatcherServlet extends HttpServlet {
 				break;
 			case "/user_login_pass":
 				showPage(request, response, "/WEB-INF/jsp/user_login_pass.jsp");
-				break;
 
-			case "/user_login_validation":
-				showPage(request, response, "/WEB-INF/jsp/user_login_validation.jsp");
 				break;
 
 		}

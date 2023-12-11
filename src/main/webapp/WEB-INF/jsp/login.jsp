@@ -77,9 +77,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="user_login_validation.jsp">
+                            <form method="post" action="user_login">
                                 <div class="row g-3">
-                                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">AirReserve</span></h1>
+                                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Ethiopian Air Line</span></h1>
                                     <h6 class="text-start text-primary text-uppercase"> Login Portal </h6>
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -109,19 +109,15 @@
         <jsp:include page="../includes/footer_gap.jsp"/>
         <!-- Footer Gapping -->
 
-
         <!-- Footer Start -->
         <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
     </div>
     <!-- JavaScript Libraries -->
     <jsp:include page="../includes/footer_js_links.jsp"/>
-
     <!-- Template Javascript -->
 </body>
 
