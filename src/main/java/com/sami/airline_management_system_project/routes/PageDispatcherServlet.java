@@ -100,7 +100,7 @@ public class PageDispatcherServlet extends HttpServlet {
 			case "/admin_login_validation":
 				showPage(request, response, "/WEB-INF/jsp/admin_login_validation.jsp");
 				break;
-			case "availability":
+			case "/availability":
 				showPage(request, response, "/WEB-INF/jsp/availability.jsp");
 				break;
 			case "/availability_from_admin":

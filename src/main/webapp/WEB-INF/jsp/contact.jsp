@@ -39,7 +39,6 @@
         <jsp:include page="../includes/navbar.jsp"/>
         <!-- Header End -->
 
-
         <!-- Page Header Start -->
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/contact_us.png);">
             <div class="container-fluid page-header-inner py-5">
