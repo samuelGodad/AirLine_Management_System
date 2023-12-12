@@ -30,7 +30,8 @@ This project is an online airline reservation system. It is a web-based applicat
 - **User Management:** The admin portal allows airline staff to manage user accounts, including viewing user details, updating user details, and deleting user accounts.
 - **Flight Status Updates:** The admin portal allows airline staff to update flight statuses, including updating flight delays and cancellations.
 - **Flight Search:** The admin portal allows airline staff to search for flights based on their preferred travel dates, destinations, and budget.
-- **Flight Status Updates:** The admin portal allows airline staff to view real-time updates on flight statuses, delays, and cancellations.
+
+[//]: # (- **Flight Status Updates:** The admin portal allows airline staff to view real-time updates on flight statuses, delays, and cancellations.)
 - 
 
 ## Project Structure
