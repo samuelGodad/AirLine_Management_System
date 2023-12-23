@@ -24,14 +24,11 @@
     </script>
     <link rel="icon" href="img/title_logo.png" type="text/x-icon">
 </head>
-
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Header Start -->
         <jsp:include page="WEB-INF/includes/navbar.jsp" />
         <!-- Header End -->
-
-
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -103,8 +100,6 @@
             </div>
         </div>
         <!-- Carousel End -->
-
-
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -380,9 +375,6 @@
             </div>
         </div>
         <!-- Service End -->
-
-        
-       
         <!-- Testimonial Start -->
         <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
@@ -412,9 +404,9 @@
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
                         <p>The website should offer a range of secure and convenient payment options, including credit cards, PayPal, and other electronic payment methods. This is best one!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="/img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/sami.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
-                                <h6 class="fw-bold mb-1">John</h6>
+                                <h6 class="fw-bold mb-1">Samuel</h6>
                                 <small>Client</small>
                             </div>
                         </div>
@@ -424,8 +416,6 @@
             </div>
         </div>
         <!-- Testimonial End -->
-
-
         <!-- Team Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -437,7 +427,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -445,7 +435,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Designer</small>
                             </div>
                         </div>
@@ -453,7 +443,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -461,7 +451,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Developer</small>
                             </div>
                         </div>
@@ -469,7 +459,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -477,7 +467,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Back End Management</small>
                             </div>
                         </div>
@@ -485,7 +475,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/me.png" alt="">
+                                <img class="img-fluid" src="img/sami.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -493,7 +483,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0">Samuel Godad</h5>
                                 <small>Technical Support</small>
                             </div>
                         </div>
@@ -502,27 +492,17 @@
             </div>
         </div>
         <!-- Team End -->
-
-
         <!-- Newsletter Start -->
         <jsp:include page="WEB-INF/includes/newsletter.jsp"/>
         <!-- Newsletter Start -->
-
-
         <!-- Footer Start -->
        <jsp:include page="WEB-INF/includes/footer.jsp" />
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-
     <!-- JavaScript Libraries -->
     <jsp:include page="WEB-INF/includes/footer_js_links.jsp"/>
-
     <!-- Template Javascript -->
-
 </body>
-
 </html>

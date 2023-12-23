@@ -15,13 +15,13 @@
                         <h1 class="text-white text-uppercase mb-3">AirReserve</h1>
                     </a>
                     <p class="text-white mb-0">
-                        The website and backend mechanism are designed and developed by <a class="text-dark fw-medium" href="https://www.facebook.com/AlphaTanmoy/">Tanmoy Das</a> hope it's attractive and can be a demo of an actual airline system.
+                        The website and backend mechanism are designed and developed by <a class="text-dark fw-medium" href="#">Group members</a> hope it's attractive and can be a demo of an actual airline system.
                     </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3">
                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Baguihati, Brainware</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Addis Ababa,Ethiopia</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+251 80117654</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>godadsamuel@gamail.com</p>
                 <div class="d-flex pt-2">
@@ -53,7 +53,7 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="${pageContext.request.contextPath}/"> AirReserve </a>, All Right Reserved. Designed By <a class="border-bottom">Tanmoy Das</a>
+                    &copy; <a class="border-bottom" href="${pageContext.request.contextPath}/"> AirReserve </a>, All Right Reserved. Designed By <a class="border-bottom">Samuel Godad</a>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">

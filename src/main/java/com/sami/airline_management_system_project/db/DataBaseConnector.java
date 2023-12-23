@@ -1,4 +1,4 @@
-package com.sami.airline_management_system_project.connection;
+package com.sami.airline_management_system_project.db;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.Properties;
 public class DataBaseConnector {
 	private static Connection connection = null;
-
 	public static Connection getConnection() {
 		if (connection == null) {
 			try {

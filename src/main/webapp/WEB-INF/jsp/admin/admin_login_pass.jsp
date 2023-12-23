@@ -10,7 +10,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <jsp:include page="../includes/header_css_links.jsp"/>
+    <jsp:include page="../../includes/header_css_links.jsp"/>
 </head>
 
 <body>
@@ -195,7 +195,7 @@
 
 
 <!-- Footer Start -->
-        <jsp:include page="../includes/footer.jsp"/>
+        <jsp:include page="../../includes/footer.jsp"/>
         <!-- Footer End -->
 
 
@@ -204,7 +204,7 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <jsp:include page="../includes/footer_js_links.jsp"/>
+    <jsp:include page="../../includes/footer_js_links.jsp"/>
 </body>
 
 </html>

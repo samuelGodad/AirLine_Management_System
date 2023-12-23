@@ -20,16 +20,13 @@ public class LoginServlet extends HttpServlet {
 		String admin_pass = request.getParameter("admin_pass");
 		boolean isValidAdmin = false;
 		boolean isvalidUser = false;
-
 		if (username != null && password != null) {
 			UserDao userDAO = new UserDao();
 			isvalidUser = userDAO.validateUser(username, password);
-
 		}
 		if (admin_name != null && admin_pass != null) {
 			AdminDao adminDAO = new AdminDao();
 			isValidAdmin = adminDAO.validateAdmin(admin_name, admin_pass);
-
 		}
 		if (isvalidUser) {
 			HttpSession session = request.getSession();
@@ -41,7 +38,6 @@ public class LoginServlet extends HttpServlet {
 			response.sendRedirect(request.getContextPath() + "/admin_login_pass");
 
 		} else {
-
 			response.sendRedirect(request.getContextPath() + "/user_login_failed");
 		}
 	}

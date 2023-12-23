@@ -8,10 +8,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
     <jsp:include page="../includes/header_css_links.jsp"/>
 </head>
-
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
@@ -40,11 +38,11 @@
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Admin Login</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">User Login</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Login</li>
                         </ol>
                     </nav>
                 </div>
@@ -59,40 +57,40 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/admnlog1.png" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="${pageContext.request.contextPath}/img/login1.png" style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/admnlog2.png">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/login2.png">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/blnk.png">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/login3.png">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/blnk.png">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/login4.png">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="user_login">
+                            <form method="post" action="user_login_servlet">
                                 <div class="row g-3">
                                     <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Ethiopian Air Line</span></h1>
-                                    <h6 class="text-start text-primary text-uppercase"> Admin Login Portal </h6>
+                                    <h6 class="text-start text-primary text-uppercase"> Login Portal </h6>
+                                    <div id="errorMessage" class="error-message"></div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="adminname" name="admin_name" placeholder="Admin Name">
-                                            <label for="adminname">Admin Name</label>
+                                            <input type="text" class="form-control" id="u_name" name="username" placeholder="User Name" required>
+                                            <label for="u_name">Your User Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="password" class="form-control" id="adminpass" name="admin_pass" placeholder="Admin Pass">
-                                            <label for="adminpass">Admin Password</label>
+                                            <input type="password" class="form-control" id="u_pass" name="password" placeholder="Your Password" required>
+                                            <label for="u_pass">User Password</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Admin Login</button>
-<%--                                        <a href="admin_login_validation" class="btn btn-outline-primary w-100 py-3 mt-3">Admin Signup</a>--%>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
                                     </div>
                                 </div>
                             </form>
@@ -101,19 +99,25 @@
                 </div>
             </div>
         </div>
-        <!---Admin Login Section -->
+        <!---Login Section -->
+
+        <!-- Footer Gappping -->
+        <jsp:include page="../includes/footer_gap.jsp"/>
+        <!-- Footer Gapping -->
 
         <!-- Footer Start -->
-       <jsp:include page="../includes/footer.jsp"/>
+        <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-
+    </div>
     <!-- JavaScript Libraries -->
     <jsp:include page="../includes/footer_js_links.jsp"/>
+    <script>
+        var errorMessage = '<%= request.getAttribute("errorMessage") %>';
+        showErrorAndFocus(errorMessage);
+    </script>
+    <!-- Template Javascript -->
 </body>
-
 </html>

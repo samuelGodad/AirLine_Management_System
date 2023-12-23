@@ -9,25 +9,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-    <!-- Favicon -->
-
-    <!-- Google Web Fonts -->
-
-    <!-- Icon Font Stylesheet -->
-
-    <!-- Libraries Stylesheet -->
     <jsp:include page="../includes/header_css_links.jsp"/>
-
-    <!-- Customized Bootstrap Stylesheet -->
-
-    <!-- Template Stylesheet -->
-
 </head>
-
 <body>
     <div class="container-xxl bg-white p-0">
-        
         <!-- Header Start -->
         <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
@@ -37,7 +22,6 @@
             </div>
         </div>
         <!-- Spinner End -->
-
         <!-- Header Start -->
         <jsp:include page="../includes/navbar.jsp"/>
         <!-- Header End -->
@@ -58,9 +42,6 @@
             </div>
         </div>
         <!-- Page Header End -->
-
-
-        
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -121,8 +102,6 @@
             </div>
         </div>
         <!-- About End -->
-
-
         <!-- Team Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -199,18 +178,12 @@
             </div>
         </div>
         <!-- Team End -->
-
-
         <!-- Newsletter Start -->
         <jsp:include page ="../includes/newsletter.jsp"/>
         <!-- Newsletter Start -->
-
-
         <!-- Footer Start -->
       <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>

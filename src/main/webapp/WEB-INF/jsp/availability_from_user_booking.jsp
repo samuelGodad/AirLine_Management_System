@@ -102,7 +102,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Search Flights</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="admin_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="admin/admin_login_pass.jsp">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Search Flights</li>
                         </ol>
                     </nav>
@@ -360,8 +360,6 @@
             </div>
         </div>
         <!-- Newsletter Start -->
-
-
         <!-- Footer Start -->
         <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->

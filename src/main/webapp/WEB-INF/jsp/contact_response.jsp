@@ -79,13 +79,13 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login/Register</a>
                                     <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="login.jsp" class="dropdown-item">Login</a>
+                                        <a href="user_login.jsp" class="dropdown-item">Login</a>
                                         <a href="register.jsp" class="dropdown-item">Register</a>
                                     </div>
                                 </div>
                                 <a href="contact.jsp" class="nav-item nav-link active">Contact</a>
                             </div>
-                            <a href="admin_login.jsp" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Admin Panel<i class="fa fa-arrow-right ms-3"></i></a>
+                            <a href="admin/admin_login.jsp" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Admin Panel<i class="fa fa-arrow-right ms-3"></i></a>
                         </div>
                     </nav>
                 </div>
@@ -242,9 +242,9 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
                                 <a class="btn btn-link" href="register.jsp">New Registration</a>
-                                <a class="btn btn-link" href="admin_login.jsp">Admin Login</a>
+                                <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>
                     </div>

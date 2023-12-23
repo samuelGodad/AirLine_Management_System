@@ -23,16 +23,25 @@ public class registration extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
+		String fullname = request.getParameter("fullname");
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		String countryCode = request.getParameter("countryCode");
+		String phno = request.getParameter("phno");
+		String email_address = request.getParameter("email_address");
+		String state = request.getParameter("state");
+		String city = request.getParameter("city");
+		String pincode = request.getParameter("pincode");
+		UserDao userDAO = new UserDao();
+
+		if (userDAO.isUsernameExists(username)) {
+			request.setAttribute("errorMessage", "Username already exists. Please choose a different one.");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/register.jsp");
+			dispatcher.forward(request, response);
+			return;
+		}
+
 		try {
-			String fullname = request.getParameter("fullname");
-			String username = request.getParameter("username");
-			String password = request.getParameter("password");
-			String countryCode = request.getParameter("countryCode");
-			String phno = request.getParameter("phno");
-			String email_address = request.getParameter("email_address");
-			String state = request.getParameter("state");
-			String city = request.getParameter("city");
-			String pincode = request.getParameter("pincode");
 			User user = new User();
 			user.setFullName(fullname);
 			user.setUserName(username);
@@ -43,21 +52,19 @@ public class registration extends HttpServlet {
 			user.setState(state);
 			user.setCity(city);
 			user.setPincod(pincode);
-			UserDao userDAO = new UserDao();
 			userDAO.insertUser(user);
 			username = user.getUserName();
 			request.getSession().setAttribute("username", username);
-
-			response.sendRedirect(request.getContextPath() +"/registration_success");
-
-//			RequestDispatcher view = request.getRequestDispatcher("/registration_success");
-//			view.forward(request, response);
+			response.sendRedirect(request.getContextPath() + "/registration_success");
 			System.out.println("record inserted successfully");
 		} catch (Exception e) {
 			e.printStackTrace();
-//			RequestDispatcher view = request.getRequestDispatcher("registration_failed");
-			response.sendRedirect(request.getContextPath() +"/registration_failed");
-//			view.forward(request, response);
+			// Handle other exceptions here if needed
+			request.setAttribute("errorMessage", "An error occurred. Please try again.");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/register.jsp");
+			dispatcher.forward(request, response);
 		}
 	}
+
 }
+

@@ -128,7 +128,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Search Flight Details</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="admin_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="admin/admin_login_pass.jsp">Home</a></li>
                             <li class="breadcrumb-item text-white" aria-current="page">Search Flight Details</li>
                         </ol>
                     </nav>
@@ -302,9 +302,9 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
                                 <a class="btn btn-link" href="register.jsp">New Registration</a>
-                                <a class="btn btn-link" href="admin_login.jsp">Admin Login</a>
+                                <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>
                     </div>

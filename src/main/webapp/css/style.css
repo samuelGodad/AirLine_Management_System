@@ -499,8 +499,16 @@
     border-right: none;
 }
 
+
 #refresh{
 	background-image: url(rpt.jpg);
 }
 
+ .error-message {
+     color: red;
+     font-weight: bold;
+ }
 
+input:invalid {
+    border: 2px solid red;
+}

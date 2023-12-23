@@ -17,9 +17,7 @@ import java.io.IOException;
 		"/addflights",
 		"/addflights_failed",
 		"/admin_login",
-		"/admin_login_failed",
 		"/admin_login_pass",
-		"/admin_login_validation",
 		"/availability",
 		"/availability_from_admin",
 		"/availability_from_user_booking",
@@ -58,7 +56,7 @@ import java.io.IOException;
 		"/user_about",
 		"/user_booking",
 		"/user_booking_failed",
-		"/user_login_failed",
+
 		"/user_login_pass",
 
 })
@@ -70,7 +68,7 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/index.jsp");
 				break;
 			case "/login_page":
-				showPage(request, response, "/WEB-INF/jsp/login.jsp");
+				showPage(request, response, "/WEB-INF/jsp/user_login.jsp");
 				break;
 			case "/about":
 				showPage(request, response, "/WEB-INF/jsp/about.jsp");
@@ -89,16 +87,11 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/addflights_failed.jsp");
 				break;
 			case "/admin_login":
-				showPage(request, response, "/WEB-INF/jsp/admin_login.jsp");
+				showPage(request, response, "/WEB-INF/jsp/admin/admin_login.jsp");
 				break;
-			case "/admin_login_failed":
-				showPage(request, response, "/WEB-INF/jsp/admin_login_failed.jsp");
-				break;
+
 			case "/admin_login_pass":
-				showPage(request, response, "/WEB-INF/jsp/admin_login_pass.jsp");
-				break;
-			case "/admin_login_validation":
-				showPage(request, response, "/WEB-INF/jsp/admin_login_validation.jsp");
+				showPage(request, response, "/WEB-INF/jsp/admin/admin_login_pass.jsp");
 				break;
 			case "/availability":
 				showPage(request, response, "/WEB-INF/jsp/availability.jsp");
@@ -236,10 +229,6 @@ public class PageDispatcherServlet extends HttpServlet {
 				break;
 			case "/user_booking_failed":
 				showPage(request, response, "/WEB-INF/jsp/user_booking_failed.jsp");
-				break;
-			case "/user_login_failed":
-				showPage(request, response, "/WEB-INF/jsp/user_login_failed.jsp");
-
 				break;
 			case "/user_login_pass":
 				showPage(request, response, "/WEB-INF/jsp/user_login_pass.jsp");

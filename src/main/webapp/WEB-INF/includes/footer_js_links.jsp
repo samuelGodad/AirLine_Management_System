@@ -19,4 +19,5 @@
 <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
 <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/main.js"></script>
-
+<script src="${pageContext.request.contextPath}/js/error.js"></script>
+<script src="${pageContext.request.contextPath}/js/formValidate.js"></script>

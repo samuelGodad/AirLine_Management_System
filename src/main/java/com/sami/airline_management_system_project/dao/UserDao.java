@@ -1,6 +1,6 @@
 package com.sami.airline_management_system_project.dao;
 
-import com.sami.airline_management_system_project.connection.DataBaseConnector;
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 import com.sami.airline_management_system_project.model.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,27 +8,30 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserDao {
+	private Connection connection;
+	private  PreparedStatement statement;
+	private ResultSet resultSet;
 	// Insert a new user into the user_details table
 	public void insertUser(User user) {
-		Connection connection = null;
-		PreparedStatement pstmt = null;
+
+
 		try {
 			connection = DataBaseConnector.getConnection();
 			String sql = "INSERT INTO user_details (fullname, username, password, mobileno,  email_address, state, city, pincode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 			try {
-				pstmt = connection.prepareStatement(sql);
+				statement = connection.prepareStatement(sql);
 			} catch (SQLException e) {
 				throw new RuntimeException(e);
 			}
-			pstmt.setString(1, user.getFullName());
-			pstmt.setString(2, user.getUserName());
-			pstmt.setString(3, user.getPassword());
-			pstmt.setString(4,"+" + user.getCountryCode() + " " + user.getPhno());
-			pstmt.setString(5, user.getEmail_address());
-			pstmt.setString(6, user.getState());
-			pstmt.setString(7, user.getCity());
-			pstmt.setString(8, user.getPincod());
-			pstmt.executeUpdate();
+			statement.setString(1, user.getFullName());
+			statement.setString(2, user.getUserName());
+			statement.setString(3, user.getPassword());
+			statement.setString(4,"+" + user.getCountryCode() + " " + user.getPhno());
+			statement.setString(5, user.getEmail_address());
+			statement.setString(6, user.getState());
+			statement.setString(7, user.getCity());
+			statement.setString(8, user.getPincod());
+			statement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -36,25 +39,23 @@ public class UserDao {
 
 	// Retrieve a user from the user_details table by username
 	public User getUserByUsername(String username) {
-		Connection connection = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
 		User user = null;
 		try {
 			connection = DataBaseConnector.getConnection();
 			String sql = "SELECT * FROM user_details WHERE username = ?";
-			pstmt = connection.prepareStatement(sql);
-			pstmt.setString(1, username);
-			rs = pstmt.executeQuery();
-			if (rs.next()) {
+			assert connection != null;
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, username);
+			resultSet = statement.executeQuery();
+			if (resultSet.next()) {
 				user = new User();
-				user.setFullName(rs.getString("fullname"));
-				user.setUserName(rs.getString("username"));
-				user.setPassword(rs.getString("password"));
-				user.setEmail_address(rs.getString("email_address"));
-				user.setState(rs.getString("state"));
-				user.setCity(rs.getString("city"));
-				user.setPincod(rs.getString("pincode"));
+				user.setFullName(resultSet.getString("fullname"));
+				user.setUserName(resultSet.getString("username"));
+				user.setPassword(resultSet.getString("password"));
+				user.setEmail_address(resultSet.getString("email_address"));
+				user.setState(resultSet.getString("state"));
+				user.setCity(resultSet.getString("city"));
+				user.setPincod(resultSet.getString("pincode"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -64,57 +65,90 @@ public class UserDao {
 
 	// Update an existing user in the user_details table
 	public void updateUser(User user) {
-		Connection conn = null;
-		PreparedStatement pstmt = null;
+
 		try {
-			conn = DataBaseConnector.getConnection();
+			connection = DataBaseConnector.getConnection();
 			String sql = "UPDATE user_details SET fullname = ?, password = ?, mobileno = ?, email_address = ?, state = ?, city = ?, pincode = ? WHERE username = ?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, user.getFullName());
-			pstmt.setString(2, user.getPassword());
-			pstmt.setString(3,"+" + user.getCountryCode() + " " + user.getPhno());
-			pstmt.setString(4, user.getEmail_address());
-			pstmt.setString(5, user.getState());
-			pstmt.setString(6, user.getCity());
-			pstmt.setString(7, user.getPincod());
-			pstmt.setString(8, user.getUserName());
-			pstmt.executeUpdate();
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, user.getFullName());
+			statement.setString(2, user.getPassword());
+			statement.setString(3,"+" + user.getCountryCode() + " " + user.getPhno());
+			statement.setString(4, user.getEmail_address());
+			statement.setString(5, user.getState());
+			statement.setString(6, user.getCity());
+			statement.setString(7, user.getPincod());
+			statement.setString(8, user.getUserName());
+			statement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 	// Delete an existing user from the user_details table
 	public void deleteUser(String username) {
-		Connection conn = null;
-		PreparedStatement pstmt = null;
 		try {
-			conn = DataBaseConnector.getConnection();
+			connection = DataBaseConnector.getConnection();
 			String sql = "DELETE FROM user_details WHERE username = ?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, username);
-			pstmt.executeUpdate();
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, username);
+			statement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 	public boolean validateUser(String username, String password) {
-		Connection connection = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
 		boolean isValidUser = false;
 		try {
 			connection = DataBaseConnector.getConnection();
 			String sql = "SELECT * FROM user_details WHERE username = ? AND password = ?";
-			pstmt = connection.prepareStatement(sql);
-			pstmt.setString(1, username);
-			pstmt.setString(2, password);
-			rs = pstmt.executeQuery();
-			if (rs.next()) {
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, username);
+			statement.setString(2, password);
+			resultSet = statement.executeQuery();
+			if (resultSet.next()) {
 				isValidUser = true;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return isValidUser;
+	}
+	public boolean isUsernameExists(String username) {
+		boolean usernameExists = false;
+		String query = "SELECT COUNT(*) FROM user_details WHERE username = ?";
+		try {
+			connection = DataBaseConnector.getConnection();
+			statement = connection.prepareStatement(query);
+			statement.setString(1, username);
+			resultSet = statement.executeQuery();
+			if (resultSet.next()) {
+				usernameExists = resultSet.getInt(1) > 0;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return usernameExists;
+	}
+	// Close resources when necessary
+	public void closeResources() {
+		try {
+			if (resultSet != null) {
+				resultSet.close();
+			}
+			if (statement != null) {
+				statement.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	// Close the connection when necessary
+	public void closeConnection() {
+		try {
+			if (connection != null && !connection.isClosed()) {
+				connection.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }

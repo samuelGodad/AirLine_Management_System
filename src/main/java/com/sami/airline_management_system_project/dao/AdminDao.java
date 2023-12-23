@@ -1,6 +1,6 @@
 package com.sami.airline_management_system_project.dao;
 
-import com.sami.airline_management_system_project.connection.DataBaseConnector;
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -31,3 +31,5 @@ public class AdminDao {
 	}
 
 }
+
+

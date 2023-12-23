@@ -1,18 +1,4 @@
-/**
- * Author:  TANMOY DAS
- * Created: Apr 27, 2022
- */
 
-/*
-
-//For Tomacat Error
-netstat -aon | find "8080"
-taskkill /f /pid 3443
-
-*/
-
-
-mysql -h localhost -u root
 
 Create Database AIRRESERVE;
 use AIRRESERVE;

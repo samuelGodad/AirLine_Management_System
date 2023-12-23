@@ -177,9 +177,9 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
                                 <a class="btn btn-link" href="register.jsp">New Registration</a>
-                                <a class="btn btn-link" href="admin_login.jsp">Admin Login</a>
+                                <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>
                     </div>

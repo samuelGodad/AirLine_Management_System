@@ -62,7 +62,7 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="admin_login_pass.jsp" class="nav-item nav-link">Home</a>
+                                <a href="admin/admin_login_pass.jsp" class="nav-item nav-link">Home</a>
                                 <a href="addflights.jsp" class="nav-item nav-link"><small>Add Flights</small></a>
                                 <a href="availability_from_admin.jsp" class="nav-item nav-link"><small>Search Flights</small></a>
                                 <a href="coupon_add.jsp" class="nav-item nav-link"><small>Add Coupon</small></a>
@@ -89,7 +89,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Search Coupon</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="admin_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="admin/admin_login_pass.jsp">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Search Coupon</li>
                         </ol>
                     </nav>
@@ -235,9 +235,9 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
                                 <a class="btn btn-link" href="register.jsp">New Registration</a>
-                                <a class="btn btn-link" href="admin_login.jsp">Admin Login</a>
+                                <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>
                     </div>
