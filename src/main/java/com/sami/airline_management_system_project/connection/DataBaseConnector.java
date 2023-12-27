@@ -1,17 +1,19 @@
 package com.sami.airline_management_system_project.connection;
+import jakarta.servlet.annotation.WebServlet;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-public class DataBaseConnector {
+public class DataBaseConnector{
 	private static Connection connection = null;
 
 	public static Connection getConnection() {
 		if (connection == null) {
 			try {
-				Class.forName("org.postgresql.Driver");
+				Class.forName("com.mysql.cj.jdbc.Driver");
 				Properties props = new Properties();
 				InputStream input = DataBaseConnector.class.getClassLoader().getResourceAsStream("db.properties");
 				if (input == null) {
