@@ -41,8 +41,7 @@ public class user_booking_validation_check extends HttpServlet {
         String driver = "com.mysql.jdbc.Driver";
         String userName = "root";
         String password = "";
-        Statement st=null;    
-        
+        Statement st=null;
         int min = 11069;      
         int max = 99099;
         String PNR = "PNR00"+(int)(Math.random()*(max-min+1)+min);
@@ -74,10 +73,8 @@ public class user_booking_validation_check extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("pnrno", PNR);
         session.setAttribute("ticket_type", ticket_type);
-        
         System.out.println(ticket_type);
         System.out.println(no_of_seats);
-        
         try    
         {    
             Class.forName(driver).newInstance();
@@ -135,7 +132,6 @@ public class user_booking_validation_check extends HttpServlet {
                         pstmt.setInt(6, adults);
                         pstmt.setInt(7, child);
                         pstmt.setString(8, PNR);
-                        
                         int x=pstmt.executeUpdate();
                         if(x==1)
                         {
@@ -165,17 +161,15 @@ public class user_booking_validation_check extends HttpServlet {
                         pay_ps_bs.setString(6, "NULL");
                         pay_ps_bs.setInt(7, 0);
                         pay_ps_bs.setInt(8, ff_1);
-                        
                         int pay_bs=pay_ps_bs.executeUpdate();
                         if(pay_bs==1)
                         {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
-                        
                         RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
                         view.forward(request, response);
                         con.close();
-                        System.out.println("Disconnected!");
+                    
                     }   break;
                 case "First Class":
                     

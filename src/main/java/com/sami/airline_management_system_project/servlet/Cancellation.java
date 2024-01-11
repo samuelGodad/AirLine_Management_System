@@ -169,7 +169,6 @@ public class Cancellation extends HttpServlet {
                             System.out.println("After Correction");
                             System.out.println("first_class_seat_booked= " + first_class_seat_booked);
                             System.out.println("first_class_seat_aval= " + first_class_seat_aval);
-
                             String fsup = "UPDATE flight_details SET first_class_seat_booked = ?, first_class_seat_aval = ? WHERE flight_id= ?";
                             PreparedStatement pfsup = conn.prepareStatement(fsup);
                             pfsup.setInt(1, first_class_seat_booked);

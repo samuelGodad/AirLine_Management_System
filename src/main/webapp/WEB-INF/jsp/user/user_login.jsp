@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <jsp:include page="../includes/header_css_links.jsp"/>
+    <jsp:include page="../../includes/header_css_links.jsp"/>
 </head>
 <body>
     <div class="container-xxl bg-white p-0">
@@ -32,7 +32,8 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <jsp:include page="../includes/navbar.jsp"/>
+        <jsp:include page="../../includes/navbar.jsp"/>
+
         <!-- Header End -->
         <!-- Page Header Start -->
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
@@ -102,18 +103,18 @@
         <!---Login Section -->
 
         <!-- Footer Gappping -->
-        <jsp:include page="../includes/footer_gap.jsp"/>
+        <jsp:include page="../../includes/footer_gap.jsp"/>
         <!-- Footer Gapping -->
 
         <!-- Footer Start -->
-        <jsp:include page="../includes/footer.jsp"/>
+        <jsp:include page="../../includes/footer.jsp"/>
         <!-- Footer End -->
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
     </div>
     <!-- JavaScript Libraries -->
-    <jsp:include page="../includes/footer_js_links.jsp"/>
+    <jsp:include page="../../includes/footer_js_links.jsp"/>
     <script>
         var errorMessage = '<%= request.getAttribute("errorMessage") %>';
         showErrorAndFocus(errorMessage);

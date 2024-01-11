@@ -80,7 +80,7 @@ public class search_flight_by_id extends HttpServlet {
             }
 
             request.setAttribute("piList", pid_list);
-            RequestDispatcher view = request.getRequestDispatcher("searc_filter_flights_result.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("search_filter_flights_result.jsp");
             view.forward(request, response);
             conn.close();
             System.out.println("Disconnected!");

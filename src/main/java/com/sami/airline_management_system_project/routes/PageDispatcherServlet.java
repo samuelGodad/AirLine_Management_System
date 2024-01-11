@@ -13,7 +13,6 @@ import java.io.IOException;
 		"/login_page",
 		"/about",
 		"/add_flight_success",
-		"/add_flight_validation",
 		"/addflights",
 		"/addflights_failed",
 		"/admin_login",
@@ -45,19 +44,16 @@ import java.io.IOException;
 		"/payment_failed",
 		"/payment_success",
 		"/register",
-		"/registration_failed",
 		"/registration_success",
-		"/search_filter_flights_result",
 		"/Responses",
 		"/search_filter_flights_result_a",
 		"/search_filter_flights_result_u",
-		"/search_result_a",
 		"/tickettype",
 		"/user_about",
 		"/user_booking",
 		"/user_booking_failed",
-
 		"/user_login_pass",
+
 
 })
 public class PageDispatcherServlet extends HttpServlet {
@@ -68,17 +64,13 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/index.jsp");
 				break;
 			case "/login_page":
-				showPage(request, response, "/WEB-INF/jsp/user_login.jsp");
+				showPage(request, response, "/WEB-INF/jsp/user/user_login.jsp");
 				break;
 			case "/about":
 				showPage(request, response, "/WEB-INF/jsp/about.jsp");
 				break;
 			case "/add_flight_success":
-				showPage(request, response, "/WEB-INF/jsp/add_flight_success.jsp");
-				break;
-
-			case "/add_flight_validation":
-				showPage(request, response, "/WEB-INF/jsp/add_flight_validation.jsp");
+				showPage(request,response,"/WEB-INF/jsp/add_flight_success.jsp");
 				break;
 			case "/addflights":
 				showPage(request, response, "/WEB-INF/jsp/addflights.jsp");
@@ -106,7 +98,11 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/booking_gateway_to_second_booking.jsp");
 				break;
 			case "/booking":
+			    if (request.getSession().getAttribute("loginUser") == null) {
+				response.sendRedirect(request.getContextPath() + "/booking_error_msg");
+			    } else {
 				showPage(request, response, "/WEB-INF/jsp/booking.jsp");
+			    }
 				break;
 			case "/booking_error_msg":
 				showPage(request, response, "/WEB-INF/jsp/booking_error_msg.jsp");
@@ -183,28 +179,19 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/payment_success.jsp");
 				break;
 			case "/register":
-				showPage(request, response, "/WEB-INF/jsp/register.jsp");
-				break;
-			case "/registration_failed":
-				showPage(request, response, "/WEB-INF/jsp/registration_failed.jsp");
+				showPage(request, response, "/WEB-INF/jsp/user/user_register.jsp");
 				break;
 			case "/registration_success":
-				showPage(request, response, "/WEB-INF/jsp/registration_scs.jsp");
+				showPage(request, response, "/WEB-INF/jsp/user/user_registration_success.jsp");
 				break;
 			case "/Responses":
 				showPage(request, response, "/WEB-INF/jsp/Responses.jsp");
 				break;
-			case "/search_filter_flights_result":
-				showPage(request, response, "/WEB-INF/jsp/search_filter_result.jsp");
-				break;
 			case "/search_filter_flights_result_a":
-				showPage(request, response, "/WEB-INF/jsp/search_filter_result_a.jsp");
+				showPage(request, response, "/WEB-INF/jsp/search_filter_flights_result_a.jsp");
 				break;
 			case "/search_filter_flights_result_u":
-				showPage(request, response, "/WEB-INF/jsp/search_filter_result_u.jsp");
-				break;
-			case "/search_result_a":
-				showPage(request, response, "/WEB-INF/jsp/search_result_a.jsp");
+				showPage(request, response, "/WEB-INF/jsp/search_filter_flights_result_u.jsp");
 				break;
 			case "/search_result_u":
 				showPage(request, response, "/WEB-INF/jsp/search_result_u.jsp");
@@ -231,8 +218,7 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/user_booking_failed.jsp");
 				break;
 			case "/user_login_pass":
-				showPage(request, response, "/WEB-INF/jsp/user_login_pass.jsp");
-
+				showPage(request, response, "/WEB-INF/jsp/user/user_login_pass.jsp");
 				break;
 
 		}
@@ -248,5 +234,7 @@ public class PageDispatcherServlet extends HttpServlet {
 			throw new RuntimeException(e);
 		}
 	}
-
+  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    doGet(request, response);
+  }
 }

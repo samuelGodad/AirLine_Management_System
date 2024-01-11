@@ -42,7 +42,7 @@ public class search_flight_by_citys_u extends HttpServlet {
             String from_city = request.getParameter("from_city");
             String to_city = request.getParameter("to_city");
             
-            if(from_city == null || from_city.equals("") && to_city == null || to_city.equals("")){
+            if(from_city == null || from_city.isEmpty() && to_city == null || to_city.isEmpty()){
                 RequestDispatcher error = request.getRequestDispatcher("error_u.jsp");
                 error.forward(request, response);
                 conn.close();
@@ -88,10 +88,10 @@ public class search_flight_by_citys_u extends HttpServlet {
                }
 
             request.setAttribute("piList", pid_list);
-            RequestDispatcher view = request.getRequestDispatcher("searc_filter_flights_result_u.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("search_filter_flights_result_u.jsp");
             view.forward(request, response);
             conn.close();
-            System.out.println("Disconnected!");
+
             }
         } 
         catch (Exception e) {
@@ -101,6 +101,7 @@ public class search_flight_by_citys_u extends HttpServlet {
 @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+
+    }
 
 }

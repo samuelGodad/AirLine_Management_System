@@ -3,7 +3,6 @@ package com.sami.airline_management_system_project.model;
 public class Admin {
 	private String adminName;
 	private String password;
-
 	public Admin() {
 	}
 

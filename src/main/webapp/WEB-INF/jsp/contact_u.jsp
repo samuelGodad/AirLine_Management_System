@@ -126,12 +126,14 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                         <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.163056890359!2d88.4260533154188!3d22.61038543727977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027589b4af1ba7%3A0xb7709326984255de!2sBrainware%20University%20Baguiati%20Admission%20Centre!5e0!3m2!1sen!2sin!4v1656563703291!5m2!1sen!2sin"
                             frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
+
                             <form method="post" action="contact_user">
                                 <div class="row g-3">
                                     <div class="col-md-6">
@@ -193,13 +195,10 @@
         <!-- Footer Start -->
         <jsp:include page="../includes/footer.jsp"/>
         <!-- Footer End -->
-
-
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+            <i class="bi bi-arrow-up"></i></a>
     </div>
-
         <jsp:include page="../includes/footer_js_links.jsp"/>
-
 </body>
 </html>

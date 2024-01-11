@@ -97,7 +97,7 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="user_login_pass.jsp" class="nav-item nav-link">Home</a>
+                                <a href="user/user_login_pass.jsp" class="nav-item nav-link">Home</a>
                                 <a href="user_about.jsp" class="nav-item nav-link">About</a>
                                 <a href="availability_from_user_booking.jsp" class="nav-item nav-link">Check Availability</a>
                                 <a href="booking.jsp" class="nav-item nav-link active">Booking</a>
@@ -124,7 +124,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Booking Details</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="user_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="user/user_login_pass.jsp">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Booking Details</li>
                         </ol>
                     </nav>
@@ -161,16 +161,16 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="../../img/about-1.png" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.png" style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="../../img/about-2.png">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.png">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="../../img/about-3.png">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.png">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="../../img/about-4.png">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.png">
                             </div>
                         </div>
                     </div>
@@ -297,8 +297,8 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
-                                <a class="btn btn-link" href="register.jsp">New Registration</a>
+                                <a class="btn btn-link" href="user/user_login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user/user_register.jsp">New Registration</a>
                                 <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<% String pagename="registration_scs.jsp"; session.setAttribute("pagename", pagename); %>
+<% String pagename="user_registration_success.jsp"; session.setAttribute("pagename", pagename); %>
 <head>
     <meta charset="utf-8">
     <title>AirLine Reservation System</title>
@@ -9,7 +9,7 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <jsp:include page="../includes/header_css_links.jsp"/>
+    <jsp:include page="../../includes/header_css_links.jsp"/>
 
 </head>
 
@@ -70,7 +70,7 @@
                                 <a href="Cancellation" class="nav-item nav-link">Cancellation</a>
                                 <a href="contact_user" class="nav-item nav-link">Contact</a>
                             </div>
-                            <a href="${pageContext.request.contextPath}/" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Welcome<small>
+                            <a href="user_login" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Welcome<small>
                                 <% String U_name=(String)session.getAttribute("username"); out.print(U_name); %>
                             </small><i class="fa fa-arrow-right ms-3"></i></a>
                         </div>
@@ -245,8 +245,8 @@
                                 </div>
                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="tickettype.jsp">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking_error_msg.jsp">Book Now</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="../tickettype.jsp">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="../booking_error_msg.jsp">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -275,8 +275,8 @@
                                 </div>
                                 <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                                 <div class="d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="tickettype.jsp">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking_error_msg.jsp">Book Now</a>
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="../tickettype.jsp">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="../booking_error_msg.jsp">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
                         <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="../../img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <img class="img-fluid flex-shrink-0 rounded" src="../../../img/testimonial-1.jpg" style="width: 45px; height: 45px;">
                             <div class="ps-3">
                                 <h6 class="fw-bold mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -468,7 +468,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../../img/me.png" alt="">
+                                <img class="img-fluid" src="../../../img/me.png" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -608,7 +608,7 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <jsp:include page="../includes/footer_js_links.jsp"/>
+    <jsp:include page="../../includes/footer_js_links.jsp"/>
 </body>
 
 </html>

@@ -15,12 +15,9 @@ import java.sql.*;
 
 @WebServlet("/user_booking_final_check")
 public class user_booking_final_check extends HttpServlet {
-
-    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
     }
 
     @Override
@@ -42,12 +39,10 @@ public class user_booking_final_check extends HttpServlet {
         String userName = "root";
         String password = "";
         Statement st=null;
-        
         String address=request.getParameter("address");    
         String payment_type=request.getParameter("payment_type");    
         String upino=request.getParameter("upino");    
         String coupon=request.getParameter("coupon");
-        
         HttpSession session=request.getSession(false);  
         String PNR=(String)session.getAttribute("PNR");
         System.out.println(PNR);
@@ -58,43 +53,34 @@ public class user_booking_final_check extends HttpServlet {
         {    
             Class.forName(driver).newInstance();
             con = DriverManager.getConnection(url + dbName, userName, password);
-            System.out.println("connected!.....");   
-               
+            System.out.println("connected!.....");
                 int fair1=0;
                 String fair_q = "SELECT fair FROM payment_details WHERE PNR = ? ";
                 PreparedStatement pstmt_fs=con.prepareStatement(fair_q);
                 pstmt_fs.setString(1,PNR);
                 ResultSet ff = pstmt_fs.executeQuery();
-                    
                 while(ff.next()){
                     fair1 = ff.getInt(1);
                 }
-                
                 int dis = 0;
                 String dicountq = "SELECT discoutnpercentage FROM coupon_table WHERE cname = ?";
                 PreparedStatement psds=con.prepareStatement(dicountq);
                 psds.setString(1,coupon);
                 ResultSet ds = psds.executeQuery();
-                    
                 while(ds.next()){
                     dis = ds.getInt(1);
                 }
                 System.out.println(dis);
-                
                 int minus = 0;
                 minus = (fair1 * dis)/100;
                 fair1 = fair1 - minus;
                 System.out.println(minus);
                 System.out.println(fair1);
-                
-                
-            String n_coupon = "Not Inserted!";
+                String n_coupon = "Not Inserted!";
             if(coupon == " " || coupon == null){
-                coupon = n_coupon; 
+                coupon = n_coupon;
                 System.out.println("coupon"+coupon);
             }
-                
-                
                 String update = "UPDATE payment_details SET address = ?, payment_gateway = ?, payment_id = ?, coupon = ?, discount = ?, actual_fair= ? WHERE PNR= ?";
                     PreparedStatement pst=con.prepareStatement(update);
                     pst.setString(1,address);

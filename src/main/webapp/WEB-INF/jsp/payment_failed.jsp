@@ -21,7 +21,7 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
+         Spinner End -->
 
         <!-- Header Start -->
         <div class="container-fluid bg-dark px-0">
@@ -62,7 +62,7 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="user_login_pass.jsp" class="nav-item nav-link">Home</a>
+                                <a href="user/user_login_pass.jsp" class="nav-item nav-link">Home</a>
                                 <a href="user_about.jsp" class="nav-item nav-link">About</a>
                                 <a href="availability_from_user_booking.jsp" class="nav-item nav-link">Check Availability</a>
                                 <a href="booking.jsp" class="nav-item nav-link active">Booking</a>
@@ -177,8 +177,8 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
-                                <a class="btn btn-link" href="register.jsp">New Registration</a>
+                                <a class="btn btn-link" href="user/user_login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user/user_register.jsp">New Registration</a>
                                 <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>

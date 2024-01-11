@@ -62,22 +62,20 @@ public class add_coupon extends HttpServlet {
 //        }
 //        System.out.println("-------------------------------INSIDE ADD_COUPON ----------------------");
 //    }
-//
+
      @Override
      protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
          response.setContentType("text/html");
          System.out.println("-------------------------------INSIDE ADD_COUPON ----------------------");
-         PrintWriter out = response.getWriter();
          try {
              int count=0;
              Connection connection = DataBaseConnector.getConnection();
              System.out.println("connected!.....");
-             String coupon_name = request.getParameter("coupon_name");
+             String coupon_name = request.getParameter("cname");
              String discountpercentage = request.getParameter("discountpercentage");
-
              HttpSession session = request.getSession();
-             session.setAttribute("coupon_name", coupon_name);
+             session.setAttribute("cname", coupon_name);
 
              Statement st=connection.createStatement();
              ResultSet rs=st.executeQuery("SELECT * FROM coupon_table WHERE coupon_name='"+coupon_name+"'");
@@ -99,7 +97,7 @@ public class add_coupon extends HttpServlet {
          catch(IOException | SQLException | ServletException e){
              System.out.print(e);
          }
-         System.out.println("-------------------------------INSIDE ADD_COUPON ----------------------");
+
      }
 
 }

@@ -33,14 +33,12 @@ public class registration extends HttpServlet {
 		String city = request.getParameter("city");
 		String pincode = request.getParameter("pincode");
 		UserDao userDAO = new UserDao();
-
 		if (userDAO.isUsernameExists(username)) {
 			request.setAttribute("errorMessage", "Username already exists. Please choose a different one.");
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/register.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/user/user_register.jsp");
 			dispatcher.forward(request, response);
 			return;
 		}
-
 		try {
 			User user = new User();
 			user.setFullName(fullname);
@@ -61,7 +59,7 @@ public class registration extends HttpServlet {
 			e.printStackTrace();
 			// Handle other exceptions here if needed
 			request.setAttribute("errorMessage", "An error occurred. Please try again.");
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/register.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/user/user_register.jsp");
 			dispatcher.forward(request, response);
 		}
 	}

@@ -21,8 +21,7 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
-
+        Spinner End -->
         <!-- Header Start -->
         <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
@@ -37,7 +36,7 @@
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="../../index.jsp" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <a href="${pageContext.request.contextPath}/" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                         <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
                     </a>
                 </div>
@@ -64,7 +63,7 @@
                         </div>
                     </div>
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-                        <a href="../../index.jsp" class="navbar-brand d-block d-lg-none">
+                        <a href="${pageContext.request.contextPath}/" class="navbar-brand d-block d-lg-none">
                             <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -79,8 +78,8 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login/Register</a>
                                     <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="user_login.jsp" class="dropdown-item">Login</a>
-                                        <a href="register.jsp" class="dropdown-item">Register</a>
+                                        <a href="user/user_login.jsp" class="dropdown-item">Login</a>
+                                        <a href="user/user_register.jsp" class="dropdown-item">Register</a>
                                     </div>
                                 </div>
                                 <a href="contact.jsp" class="nav-item nav-link active">Contact</a>
@@ -92,16 +91,14 @@
             </div>
         </div>
         <!-- Header End -->
-
-
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/contact_us.png);">
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/contact_us.png);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="../../index.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
@@ -242,8 +239,8 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
-                                <a class="btn btn-link" href="register.jsp">New Registration</a>
+                                <a class="btn btn-link" href="user/user_login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user/user_register.jsp">New Registration</a>
                                 <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>

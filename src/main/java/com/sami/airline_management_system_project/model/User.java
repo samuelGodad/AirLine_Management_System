@@ -11,6 +11,8 @@ public class User {
 	private String city;
 	private String pincode;
 	private String state;
+    	private String avatar;
+
 
 
 	public User() {
@@ -18,7 +20,7 @@ public class User {
 
 	}
 
-	public User(String fullname, String username, String email_address, String password, String countryCode, String city, String pincode, String state,String phno) {
+	public User(String fullname, String username, String email_address, String password, String countryCode, String city, String pincode, String state, String  avatar) {
 		this.fullname = fullname;
 		this.username = username;
 		this.email_address = email_address;
@@ -27,7 +29,7 @@ public class User {
 		this.city = city;
 		this.pincode = pincode;
 		this.state = state;
-		this.phno =phno;
+	    this.avatar= avatar;
 	}
 
 	public void setFullName(String fullname) {
@@ -102,5 +104,11 @@ public class User {
 
 	public String getState() {
 		return state;
+	}
+	public String  getAvatar(){
+	    		return avatar;
+	}
+	public void setAvatar(String avatar){
+	    		this.avatar = avatar;
 	}
 }

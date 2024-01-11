@@ -34,12 +34,12 @@
             </div>
         </div>
         <!-- Spinner End -->
-
         <!-- Header Start -->
         <jsp:include page="../includes/navbar.jsp"/>
         <!-- Header End -->
 
         <!-- Page Header Start -->
+
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/contact_us.png);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
@@ -54,9 +54,7 @@
             </div>
         </div>
         <!-- Page Header End -->
-
         <% String flag="1"; session.setAttribute("flag", flag); %>
-
         <!-- Contact Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -82,12 +80,12 @@
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.163056890359!2d88.4260533154188!3d22.61038543727977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027589b4af1ba7%3A0xb7709326984255de!2sBrainware%20University%20Baguiati%20Admission%20Centre!5e0!3m2!1sen!2sin!4v1656563703291!5m2!1sen!2sin"
+                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7880.575608560584!2d38.75713878757314!3d9.03748955978591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1704803074866!5m2!1sen!2set"
                             frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form method="post" action="contact_user">
+                            <form method="post" action="contact_u">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">

@@ -1,16 +1,13 @@
-//package com.sami.airline_management_system.Servelet;
-//
-//
-////import com.itextpdf.text.Font.FontFamily;
-//import com.itextpdf.kernel.Font.*;
+//package com.sami.airline_management_system_project.servlet;
+//import com.itextpdf.text.Font.FontFamily;
+//import com.itextpdf.kernel.font.*;
 //import com.itextpdf.kernel.pdf.PdfWriter;
 //import com.itextpdf.kernel.pdf.PdfPCell;
 //import com.itextpdf.kernel.pdf.PdfPtTable;
-//
-//
 //import com.itextpdf.text.pdf.PdfPCell;
 //import com.itextpdf.text.pdf.PdfPTable;
 //import com.itextpdf.text.pdf.PdfWriter;
+//
 //import jakarta.servlet.ServletException;
 //import jakarta.servlet.ServletOutputStream;
 //import jakarta.servlet.http.HttpServlet;

@@ -40,7 +40,7 @@
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Fly in Comfort</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Discover Your Dream Journey With Us</h1>
                                 <a href="availability" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Plane Availability</a>
-                                <a href="booking_error_msg" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book Plane Tickets</a>
+                                <a href="booking" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book Plane Tickets</a>
                             </div>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                                 <p class="text-body mb-3">First class tickets are a form of one-way or round-trip tickets that allow travelers ...</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="tickettype">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking_error_msg">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                                 <p class="text-body mb-3">This type of ticket allows the purchaser to sit in business class. It is a ticket that provides ...</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="tickettype">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking_error_msg">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                                 <p class="text-body mb-3">Coach tickets are a type of ticket in which fliers travel in coach or economy class.</p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="tickettype">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking_error_msg">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking">Book Now</a>
                                 </div>
                             </div>
                         </div>

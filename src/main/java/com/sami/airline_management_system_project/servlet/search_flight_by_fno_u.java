@@ -86,7 +86,7 @@ public class search_flight_by_fno_u extends HttpServlet {
             }
 
             request.setAttribute("piList", pid_list);
-            RequestDispatcher view = request.getRequestDispatcher("searc_filter_flights_result_u.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("search_filter_flights_result_u.jsp");
             view.forward(request, response);
             conn.close();
             System.out.println("Disconnected!");

@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
-<% String pagename = "register.jsp";
+<% String pagename = "user_register.jsp";
     session.setAttribute("pagename", pagename); %>
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <jsp:include page="../includes/header_css_links.jsp"/>
+    <jsp:include page="../../includes/header_css_links.jsp"/>
 
 </head>
 
@@ -29,7 +29,7 @@
         <!-- Spinner End -->
 
         <!-- Header Start -->
-        <jsp:include page="../includes/navbar.jsp"/>
+        <jsp:include page="../../includes/navbar.jsp"/>
         <!-- Header End -->
         <!-- Page Header Start -->
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
@@ -491,13 +491,13 @@
         </div>
         <!-- Newsletter Start -->
         <!-- Footer Start -->
-       <jsp:include page="../includes/footer.jsp"/>
+       <jsp:include page="../../includes/footer.jsp"/>
         <!-- Footer End -->
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-    <jsp:include page="../includes/footer_js_links.jsp"/>
+    <jsp:include page="../../includes/footer_js_links.jsp"/>
     <script>
         const errorMessage = '<%= request.getAttribute("errorMessage") %>';
         showErrorAndFocus(errorMessage);

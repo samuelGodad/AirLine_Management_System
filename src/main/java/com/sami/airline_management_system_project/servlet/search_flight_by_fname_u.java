@@ -6,7 +6,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -59,10 +58,8 @@ public class search_flight_by_fname_u extends HttpServlet {
             System.out.println("query " + query);
             st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
-
             while (rs.next()) {
                 al = new ArrayList();
-
                 al.add(rs.getString(1));
                 al.add(rs.getString(2));
                 al.add(rs.getString(3));
@@ -87,9 +84,8 @@ public class search_flight_by_fname_u extends HttpServlet {
                 System.out.println("al :: " + al);
                 pid_list.add(al);
             }
-
             request.setAttribute("piList", pid_list);
-            RequestDispatcher view = request.getRequestDispatcher("searc_filter_flights_result_u.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("search_filter_flights_result_u.jsp");
             view.forward(request, response);
             conn.close();
             System.out.println("Disconnected!");

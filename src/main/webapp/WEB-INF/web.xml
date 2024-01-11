@@ -93,8 +93,8 @@
 <!--            <servlet-class>com.sami.airline_management_system.servlet.search_flight_by_fno_u</servlet-class>-->
 <!--        </servlet>-->
 <!--        <servlet>-->
-<!--            <servlet-name>search_flight_by_id_a</servlet-name>-->
-<!--            <servlet-class>com.sami.airline_management_system.servlet.search_flight_by_id_a</servlet-class>-->
+<!--            <servlet-name>search_flight_by_admin</servlet-name>-->
+<!--            <servlet-class>com.sami.airline_management_system.servlet.search_flight_by_admin</servlet-class>-->
 <!--        </servlet>-->
 <!--        <servlet>-->
 <!--            <servlet-name>search_flight_by_id_u</servlet-name>-->
@@ -217,8 +217,8 @@
 <!--            <url-pattern>/search_flight_by_fno_u</url-pattern>-->
 <!--        </servlet-mapping>-->
 <!--        <servlet-mapping>-->
-<!--            <servlet-name>search_flight_by_id_a</servlet-name>-->
-<!--            <url-pattern>/search_flight_by_id_a</url-pattern>-->
+<!--            <servlet-name>search_flight_by_admin</servlet-name>-->
+<!--            <url-pattern>/search_flight_by_admin</url-pattern>-->
 <!--        </servlet-mapping>-->
 <!--        <servlet-mapping>-->
 <!--            <servlet-name>search_flight_by_id_u</servlet-name>-->

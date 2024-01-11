@@ -107,8 +107,8 @@
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login/Register</a>
                                     <div class="dropdown-menu rounded-0 m-0">
-                                        <a href="user_login.jsp" class="dropdown-item">Login</a>
-                                        <a href="register.jsp" class="dropdown-item">Register</a>
+                                        <a href="user/user_login.jsp" class="dropdown-item">Login</a>
+                                        <a href="user/user_register.jsp" class="dropdown-item">Register</a>
                                     </div>
                                 </div>
                                 <a href="contact.jsp" class="nav-item nav-link">Contact</a>
@@ -302,8 +302,8 @@
                             </div>
                             <div class="col-md-6">
                                 <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
-                                <a class="btn btn-link" href="user_login.jsp">Already a User</a>
-                                <a class="btn btn-link" href="register.jsp">New Registration</a>
+                                <a class="btn btn-link" href="user/user_login.jsp">Already a User</a>
+                                <a class="btn btn-link" href="user/user_register.jsp">New Registration</a>
                                 <a class="btn btn-link" href="admin/admin_login.jsp">Admin Login</a>
                             </div>
                         </div>
