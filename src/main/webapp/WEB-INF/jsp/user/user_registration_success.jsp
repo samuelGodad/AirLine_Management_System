@@ -70,7 +70,7 @@
                                 <a href="Cancellation" class="nav-item nav-link">Cancellation</a>
                                 <a href="contact_user" class="nav-item nav-link">Contact</a>
                             </div>
-                            <a href="user_login" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Welcome<small>
+                            <a href="login_page" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Welcome<small>
                                 <% String U_name=(String)session.getAttribute("username"); out.print(U_name); %>
                             </small><i class="fa fa-arrow-right ms-3"></i></a>
                         </div>
