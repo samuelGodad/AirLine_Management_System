@@ -114,7 +114,7 @@ public class FlightDao {
     }
 
     public boolean addFlight(Flight flight) {
-	String sql = "UPDATE flight_details SET flight_no = ?, flight_name = ?, from_city = ?, to_city = ?, date_of_flight = ?, flight_arrival_time = ?, flight_reach_time = ?, duration = ?, first_class_seat = ?, first_class_seat_booked = ?, first_class_seat_aval = ?, buss_class_seat = ?, buss_class_seat_booked = ?, buss_class_seat_aval = ?, eco_class_seat = ?, eco_class_seat_booked = ?, eco_class_seat_aval = ?, first_class_price = ?, buss_class_price = ?, eco_class_price = ? WHERE flight_id = ?";
+	String sql = "INSERT INTO flight_details (flight_no, flight_name, from_city, to_city, date_of_flight, flight_arrival_time, flight_reach_time, duration, first_class_seat, first_class_seat_booked, first_class_seat_aval, buss_class_seat, buss_class_seat_booked, buss_class_seat_aval, eco_class_seat, eco_class_seat_booked, eco_class_seat_aval, first_class_price, buss_class_price, eco_class_price, flight_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 	try (PreparedStatement stmt = conn.prepareStatement(sql)) {
 	    setFlightParameters(stmt, flight);
@@ -125,6 +125,7 @@ public class FlightDao {
 	    return false;
 	}
     }
+
 
 
     public boolean updateFlight(Flight flight) {
