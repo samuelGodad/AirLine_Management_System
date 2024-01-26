@@ -87,8 +87,15 @@ public class PageDispatcherServlet extends HttpServlet {
 				showPage(request, response, "/WEB-INF/jsp/admin/admin_login_pass.jsp");
 				break;
 			case "/availability":
-				showPage(request, response, "/WEB-INF/jsp/availability.jsp");
-				break;
+			    if (request.getSession().getAttribute("loginUser") == null) {
+				response.sendRedirect(request.getContextPath() + "/login_page");
+			    } else {
+				response.sendRedirect(request.getContextPath() + "/availability_from_user_booking");
+
+			    }
+			    break;
+
+
 			case "/availability_from_admin":
 				showPage(request, response, "/WEB-INF/jsp/availability_from_admin.jsp");
 				break;
