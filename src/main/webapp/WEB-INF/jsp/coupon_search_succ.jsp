@@ -143,9 +143,7 @@
                         </a>
                     </td>
                     <td>
-                        <%--                        <a href="delete_coupon?coupon_name=<%=pList.get(0)%>&discountpercentage=<%=pList.get(1)%>"data-bs-toggle="modal" data-bs-target="#deleteModal">--%>
-                        <%--                            <i class="fa fa-trash"></i>--%>
-                        <%--                        </a>--%>
+
                         <a href="#" data-toggle="modal" data-target="#deleteModal" data-coupon-name="<%=pList.get(0)%>"
                            data-discountpercentage="<%=pList.get(1)%>">
                             <i class="fa fa-trash"></i>

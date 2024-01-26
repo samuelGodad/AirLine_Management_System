@@ -1,5 +1,6 @@
 package com.sami.airline_management_system_project.servlet;
 
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -36,11 +37,7 @@ public class user_booking_validation_check extends HttpServlet {
         System.out.println("-------------------------------INSIDE USER_BOOKING_VALIDATION_CHECK ----------------------");
         PrintWriter out = response.getWriter();
         Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/";
-        String dbName = "AIRRESERVE";
-        String driver = "com.mysql.jdbc.Driver";
-        String userName = "root";
-        String password = "";
+
         Statement st=null;
         int min = 11069;      
         int max = 99099;
@@ -77,9 +74,8 @@ public class user_booking_validation_check extends HttpServlet {
         System.out.println(no_of_seats);
         try    
         {    
-            Class.forName(driver).newInstance();
-            con = DriverManager.getConnection(url + dbName, userName, password);
-            System.out.println("connected!.....");   
+            con = DataBaseConnector.getConnection();
+            System.out.println("connected!.....");
                
             if(null != ticket_type)switch (ticket_type) {
                 case "Business Class":
@@ -352,7 +348,6 @@ public class user_booking_validation_check extends HttpServlet {
                 default:
                     break;
             }
-           System.out.println("-------------------------------INSIDE USER_BOOKING_VALIDATION_CHECK ----------------------");    
         }
         catch (Exception e) {
             e.printStackTrace();

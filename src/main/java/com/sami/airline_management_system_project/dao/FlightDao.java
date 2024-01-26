@@ -209,7 +209,18 @@ public class FlightDao {
 	}
 	return flights;
     }
+    public boolean deleteFlight(String flightId) {
+	String sql = "DELETE FROM flight_details WHERE flight_id = ?";
 
+	try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+	    stmt.setString(1, flightId);
+	    int rowsAffected = stmt.executeUpdate();
+	    return rowsAffected > 0;
+	} catch (SQLException e) {
+	    e.printStackTrace();
+	    return false;
+	}
+    }
 
     public List<Flight> getFlightByFromAndToCity(String fromCity, String toCity) {
 	List<Flight> flights = new ArrayList<>();

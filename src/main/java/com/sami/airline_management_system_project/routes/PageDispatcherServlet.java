@@ -48,6 +48,7 @@ import java.io.IOException;
 		"/Responses",
 		"/search_filter_flights_result_a",
 		"/search_filter_flights_result_u",
+	         "/search_success",
 		"/tickettype",
 		"/user_about",
 		"/user_booking",

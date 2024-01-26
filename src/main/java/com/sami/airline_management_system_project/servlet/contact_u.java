@@ -29,8 +29,6 @@ public class contact_u extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        System.out.println("-------------------------------INSIDE CONTACT ----------------------");
-
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String subject = request.getParameter("subject");
@@ -61,7 +59,6 @@ public class contact_u extends HttpServlet {
             throw new ServletException(e);
         }
 
-        System.out.println("-------------------------------INSIDE CONTACT ----------------------");
     }
 
     @Override

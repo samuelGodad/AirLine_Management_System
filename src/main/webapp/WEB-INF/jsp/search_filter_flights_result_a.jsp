@@ -191,8 +191,12 @@
                         <td>
                             <%= flight.getEcoClassPrice()%>
                         </td>
+                        <td>
+                            <a href="deleteFlight?flightId=<%= flight.getFlightId()%>">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </td>
                     </tr>
-
 
                     <% } %>
                 </table>
@@ -200,7 +204,7 @@
         </div>
         <%--        <button id="editButton" onclick="makeEditable()">Edit</button>--%>
         <%--        <button id="closeButton" onclick="location.reload()">Close</button>--%>
-        <div class="d-grid gap-2">
+        <div class="d-grid gap-2 col-6 mx-auto" >
             <button class="btn btn-lg btn-primary" type="button" id="editButton" onclick="makeEditable()">Edite</button>
             <button class="btn btn-lg btn-primary" type="button" id="saveButton" style="display: none;"
                     onclick="document.getElementById('flightForm').submit()">save

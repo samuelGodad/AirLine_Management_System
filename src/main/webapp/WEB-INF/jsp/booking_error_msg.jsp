@@ -32,8 +32,8 @@
             </div>
         </div>
         <!-- Spinner End -->
-
         <!-- Header Start -->
+
         <jsp:include page="../includes/navbarwithsession.jsp"/>
         <!-- Header End -->
 
