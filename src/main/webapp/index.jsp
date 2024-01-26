@@ -106,7 +106,7 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">AirReserve</span></h1>
+                        <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">AirEthiopia</span></h1>
                         <p class="mb-4">This is the demo system of Online Flight Booking methodology developed, designed and maintained by Tanmoy Das.</p>
                         <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">

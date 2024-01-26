@@ -44,6 +44,7 @@
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <form method="post" action="add_coupon">
                                 <div class="row g-3">
+
                                     <h3 class="mb-4 text-center">Add Coupons<span class="text-primary text-uppercase"> <small>By Coupon Id</small></span></h3>
                                     <h6 class="text-start text-primary text-center text-uppercase"> <small>and Discount Offers</small> </h6>
                                     <div class="col-md-5">

@@ -12,7 +12,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="bg-primary rounded p-4">
                     <a href="${pageContext.request.contextPath}/">
-                        <h1 class="text-white text-uppercase mb-3">AirReserve</h1>
+                        <h1 class="text-white text-uppercase mb-3">AirEthiopia</h1>
                     </a>
                     <p class="text-white mb-0">
                         The website and backend mechanism are designed and developed by <a class="text-dark fw-medium" href="#">Group members</a> hope it's attractive and can be a demo of an actual airline system.
