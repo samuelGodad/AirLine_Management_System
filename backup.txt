@@ -1,0 +1,97 @@
+package com.sami.airline_management_system_project.servlet.user;
+
+import com.sami.airline_management_system_project.dao.UserDao;
+import com.sami.airline_management_system_project.db.DataBaseConnector;
+import com.sami.airline_management_system_project.helper.Keys;
+import com.sami.airline_management_system_project.model.User;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+@MultipartConfig(maxFileSize = 16177215) // upload file's size up to 16MB
+@WebServlet("/upload-image")
+public class uploadImageServlet extends HttpServlet {
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+	HttpSession session = request.getSession();
+	session.setAttribute(Keys.ERROR, "");
+	InputStream inputStream;
+	jakarta.servlet.http.Part filePart = request.getPart("userCoverPhoto");
+	if (filePart != null) {
+	    inputStream = filePart.getInputStream();
+	    try {
+		User user = (User) session.getAttribute("loginUser");
+		if (user == null) {
+		    // Redirect user to login page or show error message
+		    String originalUrl = request.getRequestURI(); // get the original URL
+		    response.sendRedirect("login_page?redirect=" + originalUrl); // pass the original URL as a parameter
+		    return;
+		}
+		String username = ((User) session.getAttribute(Keys.USER)).getUserName();
+
+		Connection conn = null;
+		PreparedStatement ps = null;
+		try {
+		    // Check if a connection already exists in the session
+		    if (session.getAttribute("DBConnection") != null) {
+			conn = (Connection) session.getAttribute("DBConnection");
+		    } else {
+			// If not, create a new connection and store it in the session
+			conn = DataBaseConnector.getConnection();
+			session.setAttribute("DBConnection", conn);
+		    }
+
+		    conn.setAutoCommit(false); // Disable auto-commit mode
+
+		    ps = conn.prepareStatement("UPDATE user_details SET avatar = ? WHERE username = ?");
+		    ps.setBinaryStream(1, inputStream, filePart.getSize());
+		    ps.setString(2, username);
+		    int row = ps.executeUpdate();
+		    if (row > 0) {
+			System.out.println("Image was uploaded successfully");
+		    }
+
+		    conn.commit(); // Commit the transaction
+		} catch (SQLException ex) {
+		    ex.printStackTrace();
+		}
+		if (UserDao.updateUserAvatar(inputStream, username) == 1) {
+		    user = UserDao.getUser(username);
+
+		    session.setAttribute(Keys.USER, user);
+		    session.setAttribute("loginUser", user);
+		    System.out.println("this is the user session" + user);
+		} else {
+		    session.setAttribute(Keys.ERROR, "Cannot upload your avatar. Try again later!");
+		}
+
+	    } catch (SQLException ex) {
+		ex.printStackTrace();
+	    }
+	}
+	response.sendRedirect("user_login_pass");
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+	processRequest(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	    throws ServletException, IOException {
+	processRequest(request, response);
+    }
+}
