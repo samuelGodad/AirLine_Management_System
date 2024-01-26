@@ -450,7 +450,7 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="number" class="form-control" name="pincode" id="pincode"
+                                            <input type="text" class="form-control" name="pincode" id="pincode"
                                                    placeholder="Enter Your Pincode" required>
                                             <label for="pincode">Enter User Pincode</label>
                                         </div>

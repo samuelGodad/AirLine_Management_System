@@ -29,6 +29,7 @@ public class Cancellation extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        System.out.println("cancellation posted");
         processRequest(request, response);
         PrintWriter out = response.getWriter();
         Connection connection = null;
@@ -186,14 +187,14 @@ public class Cancellation extends HttpServlet {
                     System.out.println("User successfully removed booking_details table...");
                 }
 
-                RequestDispatcher view = request.getRequestDispatcher("Cancellation_confirmed.jsp");
+                RequestDispatcher view = request.getRequestDispatcher("Cancellation_confirmed");
                 view.forward(request, response);
-                connection.close();
+//
                 System.out.println("Disconnected!");
             } else {
-                RequestDispatcher error = request.getRequestDispatcher("Cacellation_failed.jsp");
+                RequestDispatcher error = request.getRequestDispatcher("Cancellation_failed");
                 error.forward(request, response);
-                connection.close();
+//
                 System.out.println("Disconnected!");
             }
         } catch (Exception e) {

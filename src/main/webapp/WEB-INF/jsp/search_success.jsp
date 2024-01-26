@@ -3,6 +3,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
+<%@ page import="com.sami.airline_management_system_project.db.DataBaseConnector" %>
 <!DOCTYPE html>
 <html lang="en">
 <% String pagename="search_success.jsp"; session.setAttribute("pagename", pagename); %>
@@ -160,17 +161,10 @@
         <div class="scroll">
         <%
             String flight_id = request.getParameter("flight_id");
-            String driverName = "com.mysql.jdbc.Driver";
-            String connectionUrl = "jdbc:mysql://localhost:3306/";
-            String dbName = "AIRRESERVE";
-            String userId = "root";
-            String password = "";
+
 
             try {
-                Class.forName(driverName);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
+
 
                 Connection connection = null;
                 Statement statement = null;
@@ -206,7 +200,8 @@
                 </tr>
                 <%
                 try{ 
-                    connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
+                    connection = DataBaseConnector.getConnection();
+                    assert connection != null;
                     statement=connection.createStatement();
                     String sql ="SELECT * FROM flight_details";
 
@@ -282,9 +277,9 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Baguihati, Brainware</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 82405 70310</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>dtanmoy169@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>AA, Ethiopia</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+252193142514</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>ethio@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

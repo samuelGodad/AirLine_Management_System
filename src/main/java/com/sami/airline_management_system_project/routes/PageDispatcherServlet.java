@@ -107,6 +107,7 @@ public class PageDispatcherServlet extends HttpServlet {
 			case "/booking_error_msg":
 				showPage(request, response, "/WEB-INF/jsp/booking_error_msg.jsp");
 				break;
+
 			case "/Cancellation":
 				showPage(request, response, "/WEB-INF/jsp/Cancellation.jsp");
 
@@ -159,6 +160,12 @@ public class PageDispatcherServlet extends HttpServlet {
 				break;
 			case "/coupon_search_success":
 				showPage(request, response, "/WEB-INF/jsp/coupon_search_succ.jsp");
+				break;
+			case "/search_filter_bookings_result_u":
+				showPage(request, response, "/WEB-INF/jsp/search_filter_bookings_result_u.jsp");
+				break;
+			case "/booking_search":
+				showPage(request, response, "/WEB-INF/jsp/booking_search.jsp");
 				break;
 			case "/error":
 				showPage(request, response, "/WEB-INF/jsp/error.jsp");
@@ -217,9 +224,16 @@ public class PageDispatcherServlet extends HttpServlet {
 			case "/user_booking_failed":
 				showPage(request, response, "/WEB-INF/jsp/user_booking_failed.jsp");
 				break;
+			case "/payment":
+				showPage(request, response, "/WEB-INF/jsp/payment.jsp");
+				break;
 			case "/user_login_pass":
 				showPage(request, response, "/WEB-INF/jsp/user/user_login_pass.jsp");
 				break;
+			default:
+				System.out.println(uri);
+				showPage(request, response, "/index.jsp");
+
 
 		}
 	}

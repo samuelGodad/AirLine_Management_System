@@ -38,11 +38,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">dtanmoy169@gmail.com</p>
+                                <p class="mb-0">ethioair@gmail.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+91 82405 70310</p>
+                                <p class="mb-0"></p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -57,7 +57,7 @@
                     </div>
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="../../index.jsp" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                            <h1 class="m-0 text-primary text-uppercase">Ethioair</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>

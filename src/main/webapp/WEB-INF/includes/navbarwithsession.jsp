@@ -18,11 +18,11 @@
                 <div class="col-lg-7 px-5 text-start">
                     <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                         <i class="fa fa-envelope text-primary me-2"></i>
-                        <p class="mb-0">godadsamuel@gmail.com</p>
+                        <p class="mb-0"></p>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center py-2">
                         <i class="fa fa-phone-alt text-primary me-2"></i>
-                        <p class="mb-0">+25180117654</p>
+                        <p class="mb-0">+251980117654</p>
                     </div>
                 </div>
                 <div class="col-lg-5 px-5 text-end">
@@ -55,6 +55,7 @@
                         <a href="user_about" class="nav-item nav-link">About</a>
                         <a href="availability_from_user_booking" class="nav-item nav-link">Check Availability</a>
                         <a href="booking" class="nav-item nav-link active">Booking</a>
+                        <a href="booking_search" class="nav-item nav-link active">search bookings</a>
                         <a href="Cancellation" class="nav-item nav-link">Cancellation</a>
                         <a href="contact_user" class="nav-item nav-link">Contact</a>
                     </div>

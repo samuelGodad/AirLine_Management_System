@@ -1,5 +1,6 @@
 package com.sami.airline_management_system_project.servlet;
 
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -35,12 +36,7 @@ public class user_booking_validation_check extends HttpServlet {
         processRequest(request, response);
         System.out.println("-------------------------------INSIDE USER_BOOKING_VALIDATION_CHECK ----------------------");
         PrintWriter out = response.getWriter();
-        Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/";
-        String dbName = "AIRRESERVE";
-        String driver = "com.mysql.jdbc.Driver";
-        String userName = "root";
-        String password = "";
+        Connection con = DataBaseConnector.getConnection();
         Statement st=null;
         int min = 11069;      
         int max = 99099;
@@ -76,9 +72,7 @@ public class user_booking_validation_check extends HttpServlet {
         System.out.println(ticket_type);
         System.out.println(no_of_seats);
         try    
-        {    
-            Class.forName(driver).newInstance();
-            con = DriverManager.getConnection(url + dbName, userName, password);
+        {
             System.out.println("connected!.....");   
                
             if(null != ticket_type)switch (ticket_type) {
@@ -97,9 +91,9 @@ public class user_booking_validation_check extends HttpServlet {
                     
                     
                     if(no_of_seats > bs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                         
                     }
@@ -166,10 +160,10 @@ public class user_booking_validation_check extends HttpServlet {
                         {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
-                    
+//                        con.close();
+
                     }   break;
                 case "First Class":
                     
@@ -202,9 +196,9 @@ public class user_booking_validation_check extends HttpServlet {
                     }
                     
                     if(no_of_seats > fs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                     }
                     else{
@@ -255,9 +249,9 @@ public class user_booking_validation_check extends HttpServlet {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
                         
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Disconnected!");
                     }break;
                     
@@ -291,9 +285,9 @@ public class user_booking_validation_check extends HttpServlet {
                     }
                     
                     if(no_of_seats > cs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                     }
                     else{
@@ -344,9 +338,9 @@ public class user_booking_validation_check extends HttpServlet {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
                         
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Disconnected!");
                     }break;
                 default:

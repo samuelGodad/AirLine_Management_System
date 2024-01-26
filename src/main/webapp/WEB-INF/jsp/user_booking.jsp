@@ -39,7 +39,7 @@
                 if(document.getElementById("upino").len<12)
                     alert("Advised To Provide Proper Debit Card No!");
                 return false;
-            }
+            }}
             
 </script>  
 </head>
@@ -61,7 +61,7 @@
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="../../index.jsp" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                        <h1 class="m-0 text-primary text-uppercase">Ethioair</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -69,11 +69,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">dtanmoy169@gmail.com</p>
+                                <p class="mb-0">ethio@gmail.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+91 82405 70310</p>
+                                <p class="mb-0">+2519123456</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -95,12 +95,12 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="user/user_login_pass.jsp" class="nav-item nav-link">Home</a>
-                                <a href="user_about.jsp" class="nav-item nav-link">About</a>
-                                <a href="availability_from_user_booking.jsp" class="nav-item nav-link">Check Availability</a>
-                                <a href="booking.jsp" class="nav-item nav-link active">Booking</a>
-                                <a href="Cancellation.jsp" class="nav-item nav-link">Cancellation</a>
-                                <a href="contact_u.jsp" class="nav-item nav-link">Contact</a>
+                                <a href="user_login_pass" class="nav-item nav-link">Home</a>
+                                <a href="about" class="nav-item nav-link">About</a>
+                                <a href="availability_from_user_booking" class="nav-item nav-link">Check Availability</a>
+                                <a href="booking" class="nav-item nav-link active">Booking</a>
+                                <a href="Cancellation" class="nav-item nav-link">Cancellation</a>
+                                <a href="contact_u" class="nav-item nav-link">Contact</a>
                             </div>
                             <a href="../../index.jsp" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">LogOut As<small>
                                     <%  String U_name=(String)session.getAttribute("username");  
@@ -122,7 +122,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Booking Details</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="user/user_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="user_login_pass">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Booking Details</li>
                         </ol>
                     </nav>
@@ -260,7 +260,6 @@
 
 
         <!-- Footer Start -->
-      <jsp:
         <!-- Footer End -->
 
 

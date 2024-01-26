@@ -38,7 +38,7 @@
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <a href="${pageContext.request.contextPath}/" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                        <h1 class="m-0 text-primary text-uppercase">Ethioair</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -46,11 +46,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">dtanmoy169@gmail.com</p>
+                                <p class="mb-0">ethioair@gmail.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+91 82405 70310</p>
+                                <p class="mb-0">+2519000100</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -76,6 +76,7 @@
                                 <a href="user_about" class="nav-item nav-link">About</a>
                                 <a href="availability_from_user_booking" class="nav-item nav-link">Check Availability</a>
                                 <a href="booking" class="nav-item nav-link">Booking</a>
+                                <a href="booking_search" class="nav-item nav-link active">search bookings</a>
                                 <a href="Cancellation" class="nav-item nav-link active">Cancellation</a>
                                 <a href="contact_user" class="nav-item nav-link">Contact</a>
                             </div>
@@ -96,7 +97,9 @@
         <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/booking.png);">
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
+
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Cancellation</h1>
+
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="user_login_pass">Home</a></li>
@@ -149,17 +152,19 @@
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             
-                            <form  method="post" action="Cancellation">
+                            <form  method="post" action="cancellation">
                                 <div class="row g-3">
                                     <div class="col-md-8">
                                         <div class="form-floating">
+
                                             <input type="text" class="form-control" id="PNR" placeholder="Provide Your PNR Number" name="PNR">
                                             <label for="PNR">Provide Your PNR Number</label>
+
                                         </div>
                                     </div>
                                     <div class="col-4">
                                         <div class="form-floating">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Cancel Now</button>
+                                            <input class="btn btn-primary w-100 py-3" type="submit">Cancel Now>
                                         </div>
                                     </div>
                                     

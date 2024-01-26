@@ -27,6 +27,8 @@ public class UserLoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
 //            session.setAttribute("username", username);
             session.setAttribute("loginUser",loginUser);
+            session.setAttribute("username",username);
+
 //            User user =userDao.getUserByUsername(username);
             session.setAttribute(Keys.USER, loginUser);
 
