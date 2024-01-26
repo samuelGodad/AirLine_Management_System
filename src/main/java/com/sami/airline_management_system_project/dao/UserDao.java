@@ -40,6 +40,7 @@ public class UserDao {
 	    statement.setString(8, user.getPincod());
 	    statement.executeUpdate();
 	} catch (SQLException e) {
+		System.out.println("couldn't create user");
 	    e.printStackTrace();
 	}
     }

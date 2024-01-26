@@ -10,6 +10,7 @@
     <meta content="" name="description">
 
 
+    <jsp:include page="../includes/header_css_links.jsp"/>
 </head>
 
 <body>
@@ -65,7 +66,7 @@
                     </div>
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="../../index.jsp" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                            <h1 class="m-0 text-primary text-uppercase">Ethioair</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -93,7 +94,7 @@
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/booking.png);">
+        <div class="container-fluid page-header mb-5 p-0" >
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Cancellation</h1>
@@ -140,17 +141,17 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="margin-top: 25%;">
+
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             
-                            <form  method="post" action="Cancellation">
+                            <form  method="post" action="cancellation">
                                 <div class="row g-3">
                                     <div class="col-md-8">
                                         <div class="form-floating">

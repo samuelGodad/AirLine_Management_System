@@ -10,7 +10,8 @@ public class DataBaseConnector {
 	public static Connection getConnection() {
 		if (connection == null) {
 			try {
-				Class.forName("org.postgresql.Driver");
+//				Class.forName("org.postgresql.Driver");
+				Class.forName("com.mysql.cj.jdbc.Driver");
 				Properties props = new Properties();
 				InputStream input = DataBaseConnector.class.getClassLoader().getResourceAsStream("db.properties");
 				if (input == null) {
@@ -28,6 +29,7 @@ public class DataBaseConnector {
 				throw new RuntimeException(e);
 			}
 		}
+		System.out.println(connection+" db connector");
 		return connection;
 	}
 }

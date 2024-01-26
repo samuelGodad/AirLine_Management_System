@@ -1,6 +1,7 @@
 package com.sami.airline_management_system_project.servlet;
 
 import com.sami.airline_management_system_project.db.DataBaseConnector;
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -93,9 +94,9 @@ public class user_booking_validation_check extends HttpServlet {
                     
                     
                     if(no_of_seats > bs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                         
                     }
@@ -162,10 +163,10 @@ public class user_booking_validation_check extends HttpServlet {
                         {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
-                    
+//                        con.close();
+
                     }   break;
                 case "First Class":
                     
@@ -198,9 +199,9 @@ public class user_booking_validation_check extends HttpServlet {
                     }
                     
                     if(no_of_seats > fs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                     }
                     else{
@@ -251,9 +252,9 @@ public class user_booking_validation_check extends HttpServlet {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
                         
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Disconnected!");
                     }break;
                     
@@ -287,9 +288,9 @@ public class user_booking_validation_check extends HttpServlet {
                     }
                     
                     if(no_of_seats > cs_valid){
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking_failed");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Cant Inserted!");
                     }
                     else{
@@ -340,9 +341,9 @@ public class user_booking_validation_check extends HttpServlet {
                             System.out.println("Values Inserted Successfully To Payment Details");
                         }
                         
-                        RequestDispatcher view = request.getRequestDispatcher("user_booking.jsp");
+                        RequestDispatcher view = request.getRequestDispatcher("user_booking");
                         view.forward(request, response);
-                        con.close();
+//                        con.close();
                         System.out.println("Disconnected!");
                     }break;
                 default:

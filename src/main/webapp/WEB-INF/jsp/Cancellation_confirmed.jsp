@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<% String pagename="Cancellation_confirmed.jsp"; session.setAttribute("pagename", pagename); %>
+<% String pagename="Cancellation_confirmed"; session.setAttribute("pagename", pagename); %>
 <head>
     <meta charset="utf-8">
     <title>Airline Reservation System</title>
@@ -14,24 +14,17 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <!--div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        Spinner End -->
-        <!-- Header Start -->
+
         <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
+
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
 
-        <!-- Header Start -->
+
+
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
@@ -44,11 +37,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">dtanmoy169@gmail.com</p>
+                                <p class="mb-0">ethio@gmail.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+91 82405 70310</p>
+                                <p class="mb-0">+251900945134</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -63,19 +56,19 @@
                     </div>
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="/" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                            <h1 class="m-0 text-primary text-uppercase">Ethioair</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="user/user_login_pass.jsp" class="nav-item nav-link">Home</a>
-                                <a href="user_about.jsp" class="nav-item nav-link">About</a>
-                                <a href="availability_from_user_booking.jsp" class="nav-item nav-link">Check Availability</a>
-                                <a href="booking.jsp" class="nav-item nav-link">Booking</a>
-                                <a href="Cancellation.jsp" class="nav-item nav-link active">Cancellation</a>
-                                <a href="contact_u.jsp" class="nav-item nav-link">Contact</a>
+                                <a href="user_login_pass" class="nav-item nav-link">Home</a>
+                                <a href="user_about" class="nav-item nav-link">About</a>
+                                <a href="availability_from_user_booking" class="nav-item nav-link">Check Availability</a>
+                                <a href="booking" class="nav-item nav-link">Booking</a>
+                                <a href="Cancellation" class="nav-item nav-link active">Cancellation</a>
+                                <a href="contact_u" class="nav-item nav-link">Contact</a>
                             </div>
                             <a href="../../index.jsp" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">LogOut As<small>
                                     <%  String U_name=(String)session.getAttribute("username");  
@@ -91,7 +84,7 @@
 
 
         <!-- Page Header Start -->
-        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(../../img/booking.png);">
+        <div class="container-fluid page-header mb-5 p-0" >
             <div class="container-fluid page-header-inner py-5">
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Cancellation</h1>
@@ -139,17 +132,17 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="../../img/cncl1.png" style="margin-top: 25%;">
+<%--                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="../img/cncl1.png" style="margin-top: 25%;">--%>
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="../../img/cncl2.png">
+<%--                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="../../img/cncl2.png">--%>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             
-                            <form  method="post" action="Cancellation">
+                            <form  method="post" action="cancellation">
                                 <div class="row g-3">
                                     <div class="col-md-8">
                                         <div class="form-floating">

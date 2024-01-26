@@ -39,7 +39,7 @@
                 if(document.getElementById("upino").len<12)
                     alert("Advised To Provide Proper Debit Card No!");
                 return false;
-            }
+            }}
             
 </script>  
 </head>
@@ -68,7 +68,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Booking Details</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="user/user_login_pass.jsp">Home</a></li>
+                            <li class="breadcrumb-item"><a href="user_login_pass">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Booking Details</li>
                         </ol>
                     </nav>

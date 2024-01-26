@@ -54,14 +54,14 @@ public class AddFlightValidationServlet extends HttpServlet {
     response.sendRedirect("add_flight_success");
    } else {
     request.setAttribute("errorMessage", "Flight already exists or key value error");
-    RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/addflights.jsp");
+    RequestDispatcher requestDispatcher = request.getRequestDispatcher("addflights");
         requestDispatcher.forward(request, response);
         
 //    response.sendRedirect("addflights_failed");
    }
   } catch (Exception e) {
    request.setAttribute("errorMessage", "Flight already exists or key value error ");
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/addflights.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("addflights");
         requestDispatcher.forward(request, response);
    
 //   response.sendRedirect("addflights_failed");

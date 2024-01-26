@@ -1,5 +1,6 @@
 package com.sami.airline_management_system_project.servlet;
 
+import com.sami.airline_management_system_project.db.DataBaseConnector;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -32,12 +33,7 @@ public class user_booking_final_check extends HttpServlet {
         processRequest(request, response);
         System.out.println("-------------------------------INSIDE USER_BOOKING_FINAL_CHECK ----------------------");
         PrintWriter out = response.getWriter();
-        Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/";
-        String dbName = "AIRRESERVE";
-        String driver = "com.mysql.jdbc.Driver";
-        String userName = "root";
-        String password = "";
+        Connection con = DataBaseConnector.getConnection();
         Statement st=null;
         String address=request.getParameter("address");    
         String payment_type=request.getParameter("payment_type");    
@@ -50,9 +46,7 @@ public class user_booking_final_check extends HttpServlet {
         System.out.println(ticket_type);
         System.out.println(coupon);
         try    
-        {    
-            Class.forName(driver).newInstance();
-            con = DriverManager.getConnection(url + dbName, userName, password);
+        {
             System.out.println("connected!.....");
                 int fair1=0;
                 String fair_q = "SELECT fair FROM payment_details WHERE PNR = ? ";
@@ -101,7 +95,7 @@ public class user_booking_final_check extends HttpServlet {
         }     
         catch (Exception e) {
             e.printStackTrace();
-            RequestDispatcher view = request.getRequestDispatcher("payment_failed.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("payment");
             view.forward(request, response);
         }
         out.close();

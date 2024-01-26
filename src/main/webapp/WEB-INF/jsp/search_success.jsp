@@ -3,6 +3,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
+<%@ page import="com.sami.airline_management_system_project.db.DataBaseConnector" %>
 <!DOCTYPE html>
 <html lang="en">
 <% String pagename="search_success.jsp"; session.setAttribute("pagename", pagename); %>
@@ -104,17 +105,10 @@
         <div class="scroll">
         <%
             String flight_id = request.getParameter("flight_id");
-            String driverName = "com.mysql.jdbc.Driver";
-            String connectionUrl = "jdbc:mysql://localhost:3306/";
-            String dbName = "AIRRESERVE";
-            String userId = "root";
-            String password = "";
+
 
             try {
-                Class.forName(driverName);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
+
 
                 Connection connection = null;
                 Statement statement = null;
@@ -150,7 +144,8 @@
                 </tr>
                 <%
                 try{ 
-                    connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
+                    connection = DataBaseConnector.getConnection();
+                    assert connection != null;
                     statement=connection.createStatement();
                     String sql ="SELECT * FROM flight_details";
 

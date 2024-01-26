@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0"></h5>
                                 <small>Developer</small>
                             </div>
                         </div>
@@ -476,7 +476,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0"></h5>
                                 <small>Back End Management</small>
                             </div>
                         </div>
@@ -492,7 +492,7 @@
                                 </div>
                             </div>
                             <div class="text-center p-4 mt-3">
-                                <h5 class="fw-bold mb-0">Tanmoy Das</h5>
+                                <h5 class="fw-bold mb-0"></h5>
                                 <small>Technical Support</small>
                             </div>
                         </div>
