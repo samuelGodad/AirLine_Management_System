@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Sami
-  Date: 1/5/2024
-  Time: 2:11 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="container-fluid bg-dark px-0">
     <div class="row gx-0">
@@ -44,7 +38,7 @@
             </div>
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                 <a href="${pageContext.request.contextPath}/" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 text-primary text-uppercase">AirReserve</h1>
+                    <h1 class="m-0 text-primary text-uppercase">AIREthiopia</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>

@@ -69,7 +69,7 @@
                                 <a href="availability_from_user_booking" class="nav-item nav-link">Check Availability</a>
                                 <a href="booking" class="nav-item nav-link">Booking</a>
                                 <a href="Cancellation" class="nav-item nav-link">Cancellation</a>
-                                <a href="contact_u" class="nav-item nav-link active">Contact</a>
+                                <a href="#" class="nav-item nav-link active">Contact</a>
                             </div>
                             <a href="${pageContext.request.contextPath}/" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">LogOut As<small>
                                     <%  String U_name=(String)session.getAttribute("username");  

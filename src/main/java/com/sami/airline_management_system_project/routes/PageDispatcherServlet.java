@@ -73,6 +73,7 @@ public class PageDispatcherServlet extends HttpServlet {
 			case "/add_flight_success":
 				showPage(request,response,"/WEB-INF/jsp/add_flight_success.jsp");
 				break;
+
 			case "/addflights":
 				showPage(request, response, "/WEB-INF/jsp/addflights.jsp");
 				break;

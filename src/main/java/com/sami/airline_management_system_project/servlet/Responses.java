@@ -29,6 +29,7 @@ public class Responses extends HttpServlet {
             ArrayList al = null;
             ArrayList pid_list = new ArrayList();
             String query1 = "select * from contact_table";
+            assert conn != null;
             st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
 

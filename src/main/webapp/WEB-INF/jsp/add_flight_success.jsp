@@ -51,9 +51,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">
-                        <% String flight_id = (String) session.getAttribute("flight_id");
-                            out.print(flight_id);
-                        %> , Details Added Successfully</h6>
+                         Flight Added Successfully</h6>
                     <h1 class="mb-5">Add A <span class="text-primary text-uppercase">New Flight</span></h1>
                 </div>
                 <div class="row g-5">
