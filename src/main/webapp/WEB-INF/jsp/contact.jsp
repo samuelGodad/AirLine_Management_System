@@ -67,21 +67,21 @@
                         <div class="row gy-4">
                             <div class="col-md-4">
                                 <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>dtanmoy169@gmail.com</p>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>ethio@gmail.com</p>
                             </div>
                             <div class="col-md-4">
                                 <h6 class="section-title text-start text-primary text-uppercase">General</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>dtanmoy169@gmail.com</p>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>ethio@gmail.com</p>
                             </div>
                             <div class="col-md-4">
                                 <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>dtanmoy169@gmail.com</p>
+                                <p><i class="fa fa-envelope-open text-primary me-2"></i>ethio@gmail.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7880.575608560584!2d38.75713878757314!3d9.03748955978591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1704803074866!5m2!1sen!2set"
-                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2560348951047!2d38.760741971663826!3d9.040393491021371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1706329792697!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">

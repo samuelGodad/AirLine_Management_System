@@ -21,6 +21,7 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+
         <!-- Spinner End -->
         <!-- Header Start -->
         <jsp:include page="../includes/navbar.jsp"/>

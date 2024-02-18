@@ -117,24 +117,26 @@
                                     <h6 class="text-start text-primary text-uppercase text-center"> <small>Search Flights By Flight Name</small></h6>
                                     <div class="col-md-8">
                                         <label>Enter Flight Name</label>
-                                            <select class="form-select" name="flight_name" id="flight_name">
-                                                <option selected>Enter Flight Name</option>
-                                                <option value="AirAsia India">AirAsia India</option>
-                                                <option value="Air India">Air India</option>
-                                                <option value="Air India Express">Air India Express</option>
-                                                <option value="Go First">Go First</option>
-                                                <option value="IndiGo">IndiGo</option>
-                                                <option value="SpiceJet">SpiceJet</option>
-                                                <option value="Vistara">Vistara</option>
-                                                <option value="Alliance Air">Alliance Air</option>
-                                                <option value="FlyBig">FlyBig</option>
-                                                <option value="Star Air">Star Air</option>
-                                                <option value="TruJet">TruJet</option>
-                                                <option value="TajAir">TajAir</option>
-                                                <option value="SpiceXpress">SpiceXpress</option>
-                                                <option value="Quikjet Airlines">Quikjet Airlines</option>
-                                                <option value="Blue Dart Aviation">Blue Dart Aviation</option>
-                                            </select>
+                                        <select class="form-select" name="flight_name" id="flight_name">
+                                            <option selected>Enter Flight Name</option>
+                                            <option value="Ethiopian Airlines">Ethiopian Airlines</option>
+                                            <option value="ET701">ET701 - Addis Ababa to Nairobi</option>
+                                            <option value="ET702">ET702 - Nairobi to Addis Ababa</option>
+                                            <option value="ET703">ET703 - Addis Ababa to Johannesburg</option>
+                                            <option value="ET704">ET704 - Johannesburg to Addis Ababa</option>
+                                            <option value="ET705">ET705 - Addis Ababa to Dubai</option>
+                                            <option value="ET706">ET706 - Dubai to Addis Ababa</option>
+                                            <option value="ET707">ET707 - Addis Ababa to London</option>
+                                            <option value="ET708">ET708 - London to Addis Ababa</option>
+                                            <option value="ET709">ET709 - Addis Ababa to Beijing</option>
+                                            <option value="ET710">ET710 - Beijing to Addis Ababa</option>
+                                            <option value="ET711">ET711 - Addis Ababa to New York</option>
+                                            <option value="ET712">ET712 - New York to Addis Ababa</option>
+                                            <option value="ET713">ET713 - Addis Ababa to Paris</option>
+                                            <option value="ET714">ET714 - Paris to Addis Ababa</option>
+                                            <option value="ET715">ET715 - Addis Ababa to Mumbai</option>
+                                            <option value="ET716">ET716 - Mumbai to Addis Ababa</option>
+                                        </select>
                                    </div>
                                     <div class="col-md-4">
                                         <button class="btn btn-primary w-100 py-3" type="submit">Search</button>
@@ -153,107 +155,47 @@
                                         <label>From City</label>
                                         <select class="form-select" name="from_city" id="from_city">
                                             <option selected>Departure City Name</option>
-                                                <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
-                                                <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
-                                                <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
-                                                <option value="Bengaluru International Airport - BLR">Bengaluru International Airport - BLR</option>
-                                                <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
-                                                <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
-                                                <option value="Birsa Munda International Airport - IXR">Birsa Munda International Airport - IXR</option>
-                                                <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
-                                                <option value="Chennai International Airport - MAA">Chennai International Airport - MAA</option>
-                                                <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati Shivaji International Airport - BOM</option>
-                                                <option value="Cochin International Airport - COK">Cochin International Airport - COK</option>
-                                                <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
-                                                <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
-                                                <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
-                                                <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
-                                                <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
-                                                <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar Airport - IDR</option>
-                                                <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
-                                                <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
-                                                <option value="Hyderabad International Airport - HYD">Hyderabad International Airport - HYD</option>
-                                                <option value="Indira Gandhi International Airport - DEL">Indira Gandhi International Airport - DEL</option>
-                                                <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
-                                                <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
-                                                <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
-                                                <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
-                                                <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
-                                                <option value="Kota Airport - KTU">Kota Airport - KTU</option>
-                                                <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
-                                                <option value="Malda Airport - LDA">Malda Airport - LDA</option>
-                                                <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
-                                                <option value="Netaji Subhash Chandra Bose International Airport - CCU">Netaji Subhash Chandra Bose International Airport - CCU</option>
-                                                <option value="Patna Airport - PAT">Patna Airport - PAT</option>
-                                                <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
-                                                <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
-                                                <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
-                                                <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
-                                                <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
-                                                <option value="Simla Airport - SLV">Simla Airport - SLV</option>
-                                                <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
-                                                <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
-                                                <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
-                                                <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
-                                                <option value="Surat Airport - STV">Surat Airport - STV</option>
-                                                <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
-                                                <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
-                                                <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
-                                                <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
+                                            <option value="Addis Ababa Bole International Airport - ADD">Addis Ababa Bole International Airport - ADD</option>
+                                            <option value="Nairobi Jomo Kenyatta International Airport - NBO">Nairobi Jomo Kenyatta International Airport - NBO</option>
+                                            <option value="Johannesburg OR Tambo International Airport - JNB">Johannesburg OR Tambo International Airport - JNB</option>
+                                            <option value="Dubai International Airport - DXB">Dubai International Airport - DXB</option>
+                                            <option value="London Heathrow Airport - LHR">London Heathrow Airport - LHR</option>
+                                            <option value="Paris Charles de Gaulle Airport - CDG">Paris Charles de Gaulle Airport - CDG</option>
+                                            <option value="Beijing Capital International Airport - PEK">Beijing Capital International Airport - PEK</option>
+                                            <option value="New York John F. Kennedy International Airport - JFK">New York John F. Kennedy International Airport - JFK</option>
+                                            <option value="Mumbai Chhatrapati Shivaji Maharaj International Airport - BOM">Mumbai Chhatrapati Shivaji Maharaj International Airport - BOM</option>
+                                            <option value="Cairo International Airport - CAI">Cairo International Airport - CAI</option>
+                                            <option value="Kigali International Airport - KGL">Kigali International Airport - KGL</option>
+                                            <option value="Lagos Murtala Muhammed International Airport - LOS">Lagos Murtala Muhammed International Airport - LOS</option>
+                                            <option value="Seychelles International Airport - SEZ">Seychelles International Airport - SEZ</option>
+                                            <option value="Accra Kotoka International Airport - ACC">Accra Kotoka International Airport - ACC</option>
+                                            <option value="Djibouti-Ambouli International Airport - JIB">Djibouti-Ambouli International Airport - JIB</option>
+                                            <option value="Mogadishu Aden Adde International Airport - MGQ">Mogadishu Aden Adde International Airport - MGQ</option>
+                                            <option value="Kinshasa N'djili Airport - FIH">Kinshasa N'djili Airport - FIH</option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
                                         <label>To City</label>
-                                        <select class="form-select" name="to_city" id="to_city">
-                                            <option selected>Arrival City Name</option>
-                                                <option value="Ahmedabad Airport - AMD">Ahmedabad Airport - AMD</option>
-                                                <option value="Amritsar Airport - LUH">Amritsar Airport - LUH</option>
-                                                <option value="Bagdogra Airport - IXB">Bagdogra Airport - IXB</option>
-                                                <option value="Bengaluru International Airport - BLR">Bengaluru International Airport - BLR</option>
-                                                <option value="Bhopal Airport - BHO">Bhopal Airport - BHO</option>
-                                                <option value="Bhubaneswar Airport - BBI">Bhubaneswar Airport - BBI</option>
-                                                <option value="Birsa Munda International Airport - IXR">Birsa Munda International Airport - IXR</option>
-                                                <option value="Chandigarh Airport - IXC">Chandigarh Airport - IXC</option>
-                                                <option value="Chennai International Airport - MAA">Chennai International Airport - MAA</option>
-                                                <option value="Chhatrapati Shivaji International Airport - BOM">Chhatrapati Shivaji International Airport - BOM</option>
-                                                <option value="Cochin International Airport - COK">Cochin International Airport - COK</option>
-                                                <option value="Cooch Behar Airport - COH">Cooch Behar Airport - COH</option>
-                                                <option value="Dabok Airport - UDR">Dabok Airport - UDR</option>
-                                                <option value="Dabolim Airport - GOI">Dabolim Airport - GOI</option>
-                                                <option value="Darjeeling Airport - DAI">Darjeeling Airport - DAI</option>
-                                                <option value="Dehra Dun Airport - DED">Dehra Dun Airport - DED</option>
-                                                <option value="Devi Ahilyabai Holkar Airport - IDR">Devi Ahilyabai Holkar Airport - IDR</option>
-                                                <option value="Dhanbad Airport - DBD">Dhanbad Airport - DBD</option>
-                                                <option value="Gaya Airport - GAY">Gaya Airport - GAY</option>
-                                                <option value="Hyderabad International Airport - HYD">Hyderabad International Airport - HYD</option>
-                                                <option value="Indira Gandhi International Airport - DEL">Indira Gandhi International Airport - DEL</option>
-                                                <option value="Jabalpur Airport - JLR">Jabalpur Airport - JLR</option>
-                                                <option value="Jagdalpur Airport - JGB">Jagdalpur Airport - JGB</option>
-                                                <option value="Jaisalmer Airport - JSA">Jaisalmer Airport - JSA</option>
-                                                <option value="Jodhpur Airport - JDH">Jodhpur Airport - JDH</option>
-                                                <option value="Kanpur Airport - KNU">Kanpur Airport - KNU</option>
-                                                <option value="Kota Airport - KTU">Kota Airport - KTU</option>
-                                                <option value="Lohegaon Airport - PNQ">Lohegaon Airport - PNQ</option>
-                                                <option value="Malda Airport - LDA">Malda Airport - LDA</option>
-                                                <option value="Mysore Airport - MYQ">Mysore Airport - MYQ</option>
-                                                <option value="Netaji Subhash Chandra Bose International Airport - CCU">Netaji Subhash Chandra Bose International Airport - CCU</option>
-                                                <option value="Patna Airport - PAT">Patna Airport - PAT</option>
-                                                <option value="Pondicherry Airport - PNY">Pondicherry Airport - PNY</option>
-                                                <option value="Raipur Airport - RPR">Raipur Airport - RPR</option>
-                                                <option value="Rajkot Airport - RAJ">Rajkot Airport - RAJ</option>
-                                                <option value="Rourkela Airport - RRK">Rourkela Airport - RRK</option>
-                                                <option value="Satwari Airport - IXJ">Satwari Airport - IXJ</option>
-                                                <option value="Simla Airport - SLV">Simla Airport - SLV</option>
-                                                <option value="Singerbhil Airport - IXA">Singerbhil Airport - IXA</option>
-                                                <option value="Sonari Airport - IXW">Sonari Airport - IXW</option>
-                                                <option value="Sonegaon Airport - NAG">Sonegaon Airport - NAG</option>
-                                                <option value="Srinagar Airport - SXR">Srinagar Airport - SXR</option>
-                                                <option value="Surat Airport - STV">Surat Airport - STV</option>
-                                                <option value="Tirupati Airport - TIR">Tirupati Airport - TIR</option>
-                                                <option value="Trichy Airport - TRZ">Trichy Airport - TRZ</option>
-                                                <option value="Varanasi Airport - VNS">Varanasi Airport - VNS</option>
-                                                <option value="Warangal Airport - WGC">Warangal Airport - WGC</option>
-                                        </select>
+                                        <label for="to_city"></label><select class="form-select" name="to_city" id="to_city">
+                                        <option selected>Arrival City Name</option>
+                                        <option value="Addis Ababa Bole International Airport - ADD">Addis Ababa Bole International Airport - ADD</option>
+                                        <option value="Nairobi Jomo Kenyatta International Airport - NBO">Nairobi Jomo Kenyatta International Airport - NBO</option>
+                                        <option value="Johannesburg OR Tambo International Airport - JNB">Johannesburg OR Tambo International Airport - JNB</option>
+                                        <option value="Dubai International Airport - DXB">Dubai International Airport - DXB</option>
+                                        <option value="London Heathrow Airport - LHR">London Heathrow Airport - LHR</option>
+                                        <option value="Paris Charles de Gaulle Airport - CDG">Paris Charles de Gaulle Airport - CDG</option>
+                                        <option value="Beijing Capital International Airport - PEK">Beijing Capital International Airport - PEK</option>
+                                        <option value="New York John F. Kennedy International Airport - JFK">New York John F. Kennedy International Airport - JFK</option>
+                                        <option value="Mumbai Chhatrapati Shivaji Maharaj International Airport - BOM">Mumbai Chhatrapati Shivaji Maharaj International Airport - BOM</option>
+                                        <option value="Cairo International Airport - CAI">Cairo International Airport - CAI</option>
+                                        <option value="Kigali International Airport - KGL">Kigali International Airport - KGL</option>
+                                        <option value="Lagos Murtala Muhammed International Airport - LOS">Lagos Murtala Muhammed International Airport - LOS</option>
+                                        <option value="Seychelles International Airport - SEZ">Seychelles International Airport - SEZ</option>
+                                        <option value="Accra Kotoka International Airport - ACC">Accra Kotoka International Airport - ACC</option>
+                                        <option value="Djibouti-Ambouli International Airport - JIB">Djibouti-Ambouli International Airport - JIB</option>
+                                        <option value="Mogadishu Aden Adde International Airport - MGQ">Mogadishu Aden Adde International Airport - MGQ</option>
+                                        <option value="Kinshasa N'djili Airport - FIH">Kinshasa N'djili Airport - FIH</option>
+                                    </select>
                                     </div>
                                     <div class="col-md-4">
                                         <button class="btn btn-primary w-100 py-3" type="submit">Search</button>

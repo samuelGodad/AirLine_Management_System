@@ -76,21 +76,9 @@
                                     <div class="form-floating">
                                         <select class="form-select" name="flight_name" id="flight_name">
                                             <option selected>Enter Flight Name</option>
-                                            <option value="AirAsia India">AirAsia India</option>
-                                            <option value="Air India">Air India</option>
-                                            <option value="Air India Express">Air India Express</option>
-                                            <option value="Go First">Go First</option>
-                                            <option value="IndiGo">IndiGo</option>
-                                            <option value="SpiceJet">SpiceJet</option>
-                                            <option value="Vistara">Vistara</option>
-                                            <option value="Alliance Air">Alliance Air</option>
-                                            <option value="FlyBig">FlyBig</option>
-                                            <option value="Star Air">Star Air</option>
-                                            <option value="TruJet">TruJet</option>
-                                            <option value="TajAir">TajAir</option>
-                                            <option value="SpiceXpress">SpiceXpress</option>
-                                            <option value="Quikjet Airlines">Quikjet Airlines</option>
-                                            <option value="Blue Dart Aviation">Blue Dart Aviation</option>
+                                            <option value="Ethio">Ethio</option>
+
+
                                         </select>
                                     </div>
                                 </div>
